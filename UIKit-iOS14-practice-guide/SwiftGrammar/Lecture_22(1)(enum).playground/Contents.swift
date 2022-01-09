@@ -9,14 +9,14 @@ import UIKit
 
 // 분류만 하고 싶다 
 enum BookType {
-    case fiction(
+    case fiction
     case comics
     case workbook
 }
 
-// 어떤 타입인지 모를 때
+// 어떤 타입(case)인지 모를 때
 var bookStyle : BookType?
-bookStyle
+bookStyle           // Optional
 
 var books = [BookType]()
 

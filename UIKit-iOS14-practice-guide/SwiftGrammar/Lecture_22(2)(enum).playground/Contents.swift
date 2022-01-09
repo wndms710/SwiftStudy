@@ -1,6 +1,6 @@
 import UIKit
 
-// 분류만 하고 싶다 + 값
+// 분류 + 값
 enum BookType {
     case fiction(title: String, price: Int, year: Int)
     case comics(title: String, price: Int, year: Int)
