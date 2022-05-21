@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculatorByJueun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3C4-lY-XbZ">
+                                <rect key="frame" x="60" y="424" width="71" height="51"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="1.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" scale="large" weight="regular">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    </preferredSymbolConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtt-Dy-5zG">
+                                <rect key="frame" x="171.5" y="424" width="71" height="51"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="2.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" scale="large" weight="regular">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    </preferredSymbolConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOq-cO-cCv">
+                                <rect key="frame" x="283" y="424" width="71" height="51"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="3.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" scale="large" weight="regular">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    </preferredSymbolConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZe-2N-6uG">
+                                <rect key="frame" x="60" y="545" width="71" height="51"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="4.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" scale="large" weight="regular">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    </preferredSymbolConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbY-mV-41m">
+                                <rect key="frame" x="171.5" y="545" width="71" height="51"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="5.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" scale="large" weight="regular">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    </preferredSymbolConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pa3-3p-pc0">
+                                <rect key="frame" x="283" y="545" width="71" height="51"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="6.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" scale="large" weight="regular">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    </preferredSymbolConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qb9-XI-WZf">
+                                <rect key="frame" x="60" y="666" width="71" height="51"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="7.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" scale="large" weight="regular">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    </preferredSymbolConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEV-AD-TBQ">
+                                <rect key="frame" x="171.5" y="666" width="71" height="51"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="8.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" scale="large" weight="regular">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    </preferredSymbolConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HW6-6z-wlh">
+                                <rect key="frame" x="283" y="666" width="71" height="51"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="9.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" scale="large" weight="regular">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    </preferredSymbolConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0q-Rd-fLQ">
+                                <rect key="frame" x="171.5" y="787" width="71" height="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="0.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" scale="large" weight="regular">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    </preferredSymbolConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.59818046999038965" green="0.8205694162325391" blue="0.96983832120895386" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="N0q-Rd-fLQ" firstAttribute="centerX" secondItem="Wtt-Dy-5zG" secondAttribute="centerX" id="5cm-rg-9mY"/>
+                            <constraint firstItem="Wtt-Dy-5zG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="380" id="5t4-JQ-pVd"/>
+                            <constraint firstItem="N0q-Rd-fLQ" firstAttribute="centerX" secondItem="Wtt-Dy-5zG" secondAttribute="centerX" id="7za-2w-rfs"/>
+                            <constraint firstItem="DbY-mV-41m" firstAttribute="top" secondItem="Wtt-Dy-5zG" secondAttribute="bottom" constant="70" id="9zh-fA-NEH"/>
+                            <constraint firstItem="BEV-AD-TBQ" firstAttribute="top" secondItem="DbY-mV-41m" secondAttribute="bottom" constant="70" id="AuS-aN-Hw4"/>
+                            <constraint firstItem="qb9-XI-WZf" firstAttribute="top" secondItem="OZe-2N-6uG" secondAttribute="bottom" constant="70" id="Aw8-ly-PJb"/>
+                            <constraint firstItem="Pa3-3p-pc0" firstAttribute="top" secondItem="QOq-cO-cCv" secondAttribute="bottom" constant="70" id="CPH-gz-MuD"/>
+                            <constraint firstItem="OZe-2N-6uG" firstAttribute="top" secondItem="3C4-lY-XbZ" secondAttribute="bottom" constant="70" id="ECL-W5-bE2"/>
+                            <constraint firstItem="QOq-cO-cCv" firstAttribute="centerY" secondItem="3C4-lY-XbZ" secondAttribute="centerY" id="FFr-N5-Juu"/>
+                            <constraint firstItem="HW6-6z-wlh" firstAttribute="centerY" secondItem="qb9-XI-WZf" secondAttribute="centerY" id="JGl-cB-8qE"/>
+                            <constraint firstItem="Pa3-3p-pc0" firstAttribute="centerY" secondItem="OZe-2N-6uG" secondAttribute="centerY" id="NgR-Pc-wuK"/>
+                            <constraint firstItem="HW6-6z-wlh" firstAttribute="top" secondItem="Pa3-3p-pc0" secondAttribute="bottom" constant="70" id="PZ4-DE-n0n"/>
+                            <constraint firstItem="BEV-AD-TBQ" firstAttribute="centerX" secondItem="Wtt-Dy-5zG" secondAttribute="centerX" id="TzN-Xp-Yyw"/>
+                            <constraint firstItem="qb9-XI-WZf" firstAttribute="centerX" secondItem="3C4-lY-XbZ" secondAttribute="centerX" id="Wqh-11-4ae"/>
+                            <constraint firstItem="HW6-6z-wlh" firstAttribute="centerX" secondItem="QOq-cO-cCv" secondAttribute="centerX" id="XQA-KB-0eo"/>
+                            <constraint firstItem="BEV-AD-TBQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bUn-FE-RN7"/>
+                            <constraint firstItem="DbY-mV-41m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="biT-II-zCk"/>
+                            <constraint firstItem="Wtt-Dy-5zG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cq0-lD-Ubi"/>
+                            <constraint firstItem="Pa3-3p-pc0" firstAttribute="centerX" secondItem="QOq-cO-cCv" secondAttribute="centerX" id="g0s-dk-0hj"/>
+                            <constraint firstItem="Wtt-Dy-5zG" firstAttribute="centerY" secondItem="3C4-lY-XbZ" secondAttribute="centerY" id="hcV-f9-tA8"/>
+                            <constraint firstItem="N0q-Rd-fLQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jS8-f1-5YC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N0q-Rd-fLQ" secondAttribute="bottom" constant="60" id="lEG-zG-62P"/>
+                            <constraint firstItem="OZe-2N-6uG" firstAttribute="centerX" secondItem="3C4-lY-XbZ" secondAttribute="centerX" id="p0J-72-Jdg"/>
+                            <constraint firstItem="DbY-mV-41m" firstAttribute="centerY" secondItem="OZe-2N-6uG" secondAttribute="centerY" id="quz-N4-29O"/>
+                            <constraint firstItem="N0q-Rd-fLQ" firstAttribute="top" secondItem="BEV-AD-TBQ" secondAttribute="bottom" constant="70" id="rU9-VB-bBZ"/>
+                            <constraint firstItem="BEV-AD-TBQ" firstAttribute="centerX" secondItem="Wtt-Dy-5zG" secondAttribute="centerX" id="rnH-Ry-bkJ"/>
+                            <constraint firstItem="qb9-XI-WZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="rz3-pf-qLe"/>
+                            <constraint firstItem="BEV-AD-TBQ" firstAttribute="centerY" secondItem="qb9-XI-WZf" secondAttribute="centerY" id="s00-t9-omz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QOq-cO-cCv" secondAttribute="trailing" constant="60" id="ySm-wB-h1D"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0.circle" catalog="system" width="128" height="121"/>
+        <image name="1.circle" catalog="system" width="128" height="121"/>
+        <image name="2.circle" catalog="system" width="128" height="121"/>
+        <image name="3.circle" catalog="system" width="128" height="121"/>
+        <image name="4.circle" catalog="system" width="128" height="121"/>
+        <image name="5.circle" catalog="system" width="128" height="121"/>
+        <image name="6.circle" catalog="system" width="128" height="121"/>
+        <image name="7.circle" catalog="system" width="128" height="121"/>
+        <image name="8.circle" catalog="system" width="128" height="121"/>
+        <image name="9.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

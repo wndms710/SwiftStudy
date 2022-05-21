@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4145A7262838A41B00814DA9 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4145A7252838A41B00814DA9 /* CreditViewController.swift */; };
-		41A4CE682836446900699882 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A4CE672836446900699882 /* AppDelegate.swift */; };
-		41A4CE6A2836446900699882 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A4CE692836446900699882 /* SceneDelegate.swift */; };
-		41A4CE6C2836446900699882 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A4CE6B2836446900699882 /* ViewController.swift */; };
-		41A4CE6F2836446900699882 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A4CE6D2836446900699882 /* Main.storyboard */; };
-		41A4CE712836446D00699882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A4CE702836446D00699882 /* Assets.xcassets */; };
-		41A4CE742836446D00699882 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A4CE722836446D00699882 /* LaunchScreen.storyboard */; };
+		4121AA642838DD6E0054593F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4121AA632838DD6E0054593F /* AppDelegate.swift */; };
+		4121AA662838DD6E0054593F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4121AA652838DD6E0054593F /* SceneDelegate.swift */; };
+		4121AA682838DD6E0054593F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4121AA672838DD6E0054593F /* ViewController.swift */; };
+		4121AA6B2838DD6E0054593F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4121AA692838DD6E0054593F /* Main.storyboard */; };
+		4121AA6D2838DD6F0054593F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4121AA6C2838DD6F0054593F /* Assets.xcassets */; };
+		4121AA702838DD6F0054593F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4121AA6E2838DD6F0054593F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4145A7252838A41B00814DA9 /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
-		41A4CE642836446900699882 /* UpDownGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpDownGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		41A4CE672836446900699882 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41A4CE692836446900699882 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		41A4CE6B2836446900699882 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		41A4CE6E2836446900699882 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		41A4CE702836446D00699882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		41A4CE732836446D00699882 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		41A4CE752836446D00699882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4121AA602838DD6E0054593F /* CalculatorByJueun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorByJueun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4121AA632838DD6E0054593F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4121AA652838DD6E0054593F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4121AA672838DD6E0054593F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4121AA6A2838DD6E0054593F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4121AA6C2838DD6F0054593F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4121AA6F2838DD6F0054593F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4121AA712838DD6F0054593F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		41A4CE612836446900699882 /* Frameworks */ = {
+		4121AA5D2838DD6E0054593F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		41A4CE5B2836446900699882 = {
+		4121AA572838DD6E0054593F = {
 			isa = PBXGroup;
 			children = (
-				41A4CE662836446900699882 /* UpDownGame */,
-				41A4CE652836446900699882 /* Products */,
+				4121AA622838DD6E0054593F /* CalculatorByJueun */,
+				4121AA612838DD6E0054593F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		41A4CE652836446900699882 /* Products */ = {
+		4121AA612838DD6E0054593F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41A4CE642836446900699882 /* UpDownGame.app */,
+				4121AA602838DD6E0054593F /* CalculatorByJueun.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		41A4CE662836446900699882 /* UpDownGame */ = {
+		4121AA622838DD6E0054593F /* CalculatorByJueun */ = {
 			isa = PBXGroup;
 			children = (
-				41A4CE672836446900699882 /* AppDelegate.swift */,
-				41A4CE692836446900699882 /* SceneDelegate.swift */,
-				41A4CE6B2836446900699882 /* ViewController.swift */,
-				4145A7252838A41B00814DA9 /* CreditViewController.swift */,
-				41A4CE6D2836446900699882 /* Main.storyboard */,
-				41A4CE702836446D00699882 /* Assets.xcassets */,
-				41A4CE722836446D00699882 /* LaunchScreen.storyboard */,
-				41A4CE752836446D00699882 /* Info.plist */,
+				4121AA632838DD6E0054593F /* AppDelegate.swift */,
+				4121AA652838DD6E0054593F /* SceneDelegate.swift */,
+				4121AA672838DD6E0054593F /* ViewController.swift */,
+				4121AA692838DD6E0054593F /* Main.storyboard */,
+				4121AA6C2838DD6F0054593F /* Assets.xcassets */,
+				4121AA6E2838DD6F0054593F /* LaunchScreen.storyboard */,
+				4121AA712838DD6F0054593F /* Info.plist */,
 			);
-			path = UpDownGame;
+			path = CalculatorByJueun;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		41A4CE632836446900699882 /* UpDownGame */ = {
+		4121AA5F2838DD6E0054593F /* CalculatorByJueun */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41A4CE782836446D00699882 /* Build configuration list for PBXNativeTarget "UpDownGame" */;
+			buildConfigurationList = 4121AA742838DD6F0054593F /* Build configuration list for PBXNativeTarget "CalculatorByJueun" */;
 			buildPhases = (
-				41A4CE602836446900699882 /* Sources */,
-				41A4CE612836446900699882 /* Frameworks */,
-				41A4CE622836446900699882 /* Resources */,
+				4121AA5C2838DD6E0054593F /* Sources */,
+				4121AA5D2838DD6E0054593F /* Frameworks */,
+				4121AA5E2838DD6E0054593F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = UpDownGame;
-			productName = UpDownGame;
-			productReference = 41A4CE642836446900699882 /* UpDownGame.app */;
+			name = CalculatorByJueun;
+			productName = CalculatorByJueun;
+			productReference = 4121AA602838DD6E0054593F /* CalculatorByJueun.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		41A4CE5C2836446900699882 /* Project object */ = {
+		4121AA582838DD6E0054593F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					41A4CE632836446900699882 = {
+					4121AA5F2838DD6E0054593F = {
 						CreatedOnToolsVersion = 13.4;
 					};
 				};
 			};
-			buildConfigurationList = 41A4CE5F2836446900699882 /* Build configuration list for PBXProject "UpDownGame" */;
+			buildConfigurationList = 4121AA5B2838DD6E0054593F /* Build configuration list for PBXProject "CalculatorByJueun" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 41A4CE5B2836446900699882;
-			productRefGroup = 41A4CE652836446900699882 /* Products */;
+			mainGroup = 4121AA572838DD6E0054593F;
+			productRefGroup = 4121AA612838DD6E0054593F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41A4CE632836446900699882 /* UpDownGame */,
+				4121AA5F2838DD6E0054593F /* CalculatorByJueun */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		41A4CE622836446900699882 /* Resources */ = {
+		4121AA5E2838DD6E0054593F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41A4CE742836446D00699882 /* LaunchScreen.storyboard in Resources */,
-				41A4CE712836446D00699882 /* Assets.xcassets in Resources */,
-				41A4CE6F2836446900699882 /* Main.storyboard in Resources */,
+				4121AA702838DD6F0054593F /* LaunchScreen.storyboard in Resources */,
+				4121AA6D2838DD6F0054593F /* Assets.xcassets in Resources */,
+				4121AA6B2838DD6E0054593F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		41A4CE602836446900699882 /* Sources */ = {
+		4121AA5C2838DD6E0054593F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41A4CE6C2836446900699882 /* ViewController.swift in Sources */,
-				41A4CE682836446900699882 /* AppDelegate.swift in Sources */,
-				41A4CE6A2836446900699882 /* SceneDelegate.swift in Sources */,
-				4145A7262838A41B00814DA9 /* CreditViewController.swift in Sources */,
+				4121AA682838DD6E0054593F /* ViewController.swift in Sources */,
+				4121AA642838DD6E0054593F /* AppDelegate.swift in Sources */,
+				4121AA662838DD6E0054593F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		41A4CE6D2836446900699882 /* Main.storyboard */ = {
+		4121AA692838DD6E0054593F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				41A4CE6E2836446900699882 /* Base */,
+				4121AA6A2838DD6E0054593F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		41A4CE722836446D00699882 /* LaunchScreen.storyboard */ = {
+		4121AA6E2838DD6F0054593F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				41A4CE732836446D00699882 /* Base */,
+				4121AA6F2838DD6F0054593F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		41A4CE762836446D00699882 /* Debug */ = {
+		4121AA722838DD6F0054593F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		41A4CE772836446D00699882 /* Release */ = {
+		4121AA732838DD6F0054593F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,7 +280,7 @@
 			};
 			name = Release;
 		};
-		41A4CE792836446D00699882 /* Debug */ = {
+		4121AA752838DD6F0054593F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -293,11 +289,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GU4WSYSAM9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UpDownGame/Info.plist;
+				INFOPLIST_FILE = CalculatorByJueun/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,7 +301,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jueun.UpDownGame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jueun.CalculatorByJueun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -313,7 +309,7 @@
 			};
 			name = Debug;
 		};
-		41A4CE7A2836446D00699882 /* Release */ = {
+		4121AA762838DD6F0054593F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -322,11 +318,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GU4WSYSAM9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UpDownGame/Info.plist;
+				INFOPLIST_FILE = CalculatorByJueun/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jueun.UpDownGame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jueun.CalculatorByJueun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -345,25 +341,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		41A4CE5F2836446900699882 /* Build configuration list for PBXProject "UpDownGame" */ = {
+		4121AA5B2838DD6E0054593F /* Build configuration list for PBXProject "CalculatorByJueun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41A4CE762836446D00699882 /* Debug */,
-				41A4CE772836446D00699882 /* Release */,
+				4121AA722838DD6F0054593F /* Debug */,
+				4121AA732838DD6F0054593F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41A4CE782836446D00699882 /* Build configuration list for PBXNativeTarget "UpDownGame" */ = {
+		4121AA742838DD6F0054593F /* Build configuration list for PBXNativeTarget "CalculatorByJueun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41A4CE792836446D00699882 /* Debug */,
-				41A4CE7A2836446D00699882 /* Release */,
+				4121AA752838DD6F0054593F /* Debug */,
+				4121AA762838DD6F0054593F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 41A4CE5C2836446900699882 /* Project object */;
+	rootObject = 4121AA582838DD6E0054593F /* Project object */;
 }
