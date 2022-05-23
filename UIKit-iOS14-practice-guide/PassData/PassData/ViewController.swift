@@ -4,8 +4,9 @@
 // 6가지
 
 // 1. instance property
-// 데이터를 넘겨줄 대상의 class가 가지고 있는 instance property에 데이터를 넘겨주는 것
-// 어디에 속해있다를 강조하고 싶으면 property를 씀
+// 2. segue
+// 3. instance
+
 
 import UIKit
 
@@ -13,9 +14,36 @@ class ViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+    }
+    @IBOutlet weak var dataLabel: UILabel!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueDetail" {
+            if let detailVC = segue.destination as? SegueDetailViewController {
+//                detailVC.dataLabel.text = "abcd"      // 직접 접근은 좋지 않음
+                detailVC.dataString = "abcd"
+            }
+        }
     }
 
+    @IBAction func moveToDetail(_ sender: Any) {
+        let detailVC = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        
+//        detailVC.someString = "aaa 스트링"
+        
+        self.present(detailVC, animated: true, completion: nil)
+        
+        detailVC.someLabel.text = "bb"
+    }
+    
+    @IBAction func moveToInstance(_ sender: Any) {
+        let detailVC = InstanceDetailViewController(nibName: "InstanceDetailViewController", bundle: nil)
 
+        detailVC.mainVC = self          // 나 자신을 넘겨줌
+
+        self.present(detailVC, animated: true, completion: nil)
+    }
+    
 }
 
