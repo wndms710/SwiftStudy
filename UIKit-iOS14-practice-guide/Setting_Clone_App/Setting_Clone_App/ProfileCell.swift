@@ -11,7 +11,7 @@ class ProfileCell: UITableViewCell {
 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var topTitle: UILabel!
-    @IBOutlet weak var bottomTitle: UILabel!
+    @IBOutlet weak var bottomDescription: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,8 +21,8 @@ class ProfileCell: UITableViewCell {
         topTitle.textColor = .blue
         topTitle.font = UIFont.systemFont(ofSize: 20)
         
-        bottomTitle.textColor = .darkGray
-        bottomTitle.font = UIFont.systemFont(ofSize: 16)
+        bottomDescription.textColor = .darkGray
+        bottomDescription.font = UIFont.systemFont(ofSize: 16)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
