@@ -22,9 +22,18 @@ class ViewController: UIViewController {
             [SettingModel(leftImageName: "gear", menuTitle: "General", subTitle: nil, rightImageName: "chevron.right"),
         SettingModel(leftImageName: "person.fill", menuTitle: "Accessibility", subTitle: nil, rightImageName: "chevron.right"),
         SettingModel(leftImageName: "hand.raised.fill", menuTitle: "Privacy", subTitle: nil, rightImageName: "chevron.right")]
+            
         )
     }
     
+    // 화면이 나올 때마다 호출
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = true
+
+    }
+    
+    // 메모리 해제가 안 되면 한 번 호출하고 끝
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,8 +46,11 @@ class ViewController: UIViewController {
         settingTableView.register(UINib(nibName: "MenuCell", bundle: nil), forCellReuseIdentifier: "MenuCell")
         
         makeData()
+        
+        title = "Settings"
+        self.view.backgroundColor = UIColor(white: 245/255, alpha: 1)
+    
     }
-
 }
 
 
@@ -55,6 +67,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return settingModel.count
     }
     
+    // General 눌렀을 때 스토리보드 가져오기
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 1 && indexPath.row == 0 {
+            // name 이름의 스토리보드에서 해당 ID값을 가지는 view controller를 가져와라
+            if let generalVC = UIStoryboard(name: "GeneralViewController", bundle: nil).instantiateViewController(withIdentifier: "GeneralViewController") as? GeneralViewController {
+                self.navigationController?.pushViewController(generalVC, animated: true)
+            }
+        }
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
