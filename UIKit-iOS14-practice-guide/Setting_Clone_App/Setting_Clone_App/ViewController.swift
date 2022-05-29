@@ -69,7 +69,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     // General 눌렀을 때 스토리보드 가져오기
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 1 && indexPath.row == 0 {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        if indexPath.section == 0 && indexPath.row == 0 {
+            let myidVC = MyIDViewController(nibName: "MyIDViewController", bundle: nil)
+            
+            self.present(myidVC, animated: true, completion: nil)
+        }
+        
+        else if indexPath.section == 1 && indexPath.row == 0 {
             // name 이름의 스토리보드에서 해당 ID값을 가지는 view controller를 가져와라
             if let generalVC = UIStoryboard(name: "GeneralViewController", bundle: nil).instantiateViewController(withIdentifier: "GeneralViewController") as? GeneralViewController {
                 self.navigationController?.pushViewController(generalVC, animated: true)

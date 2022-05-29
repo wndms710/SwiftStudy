@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		418A675E2842687200A3A599 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418A675D2842687200A3A599 /* GeneralViewController.swift */; };
 		418A67602842688900A3A599 /* GeneralViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418A675F2842688900A3A599 /* GeneralViewController.storyboard */; };
+		418E1F9A2843B2E200272B88 /* MyIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418E1F982843B2E200272B88 /* MyIDViewController.swift */; };
+		418E1F9B2843B2E200272B88 /* MyIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 418E1F992843B2E200272B88 /* MyIDViewController.xib */; };
 		41B85A3E283F4D9B00F8D4C4 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B85A3D283F4D9B00F8D4C4 /* SettingModel.swift */; };
 		41D1A12D283E712300FBB803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D1A12C283E712300FBB803 /* AppDelegate.swift */; };
 		41D1A12F283E712300FBB803 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D1A12E283E712300FBB803 /* SceneDelegate.swift */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		418A675D2842687200A3A599 /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		418A675F2842688900A3A599 /* GeneralViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GeneralViewController.storyboard; sourceTree = "<group>"; };
+		418E1F982843B2E200272B88 /* MyIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIDViewController.swift; sourceTree = "<group>"; };
+		418E1F992843B2E200272B88 /* MyIDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyIDViewController.xib; sourceTree = "<group>"; };
 		41B85A3D283F4D9B00F8D4C4 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 		41D1A129283E712300FBB803 /* Setting_Clone_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Setting_Clone_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D1A12C283E712300FBB803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				418A675F2842688900A3A599 /* GeneralViewController.storyboard */,
 				41D1A161283E8CA800FBB803 /* MenuCell.xib */,
 				418A675D2842687200A3A599 /* GeneralViewController.swift */,
+				418E1F982843B2E200272B88 /* MyIDViewController.swift */,
+				418E1F992843B2E200272B88 /* MyIDViewController.xib */,
 				41D1A132283E712300FBB803 /* Main.storyboard */,
 				41D1A15C283E833900FBB803 /* ProfileCell.swift */,
 				41D1A15D283E833900FBB803 /* ProfileCell.xib */,
@@ -256,6 +262,7 @@
 				41D1A139283E712400FBB803 /* LaunchScreen.storyboard in Resources */,
 				41D1A15F283E833900FBB803 /* ProfileCell.xib in Resources */,
 				41D1A163283E8CA800FBB803 /* MenuCell.xib in Resources */,
+				418E1F9B2843B2E200272B88 /* MyIDViewController.xib in Resources */,
 				41D1A136283E712400FBB803 /* Assets.xcassets in Resources */,
 				41D1A134283E712300FBB803 /* Main.storyboard in Resources */,
 			);
@@ -287,6 +294,7 @@
 				41D1A162283E8CA800FBB803 /* MenuCell.swift in Sources */,
 				41B85A3E283F4D9B00F8D4C4 /* SettingModel.swift in Sources */,
 				41D1A15E283E833900FBB803 /* ProfileCell.swift in Sources */,
+				418E1F9A2843B2E200272B88 /* MyIDViewController.swift in Sources */,
 				41D1A12D283E712300FBB803 /* AppDelegate.swift in Sources */,
 				41D1A12F283E712300FBB803 /* SceneDelegate.swift in Sources */,
 			);
