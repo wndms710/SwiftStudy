@@ -25,8 +25,24 @@
                                 <color key="shadowColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" text="에그시의 편지" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aJ3-vE-RLW">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aJ3-vE-RLW">
                                 <rect key="frame" x="20" y="476" width="350" height="314"/>
+                                <mutableString key="text">안녕 주으낭 
+나는 너의 남자친구 봄진킴이야 
+오늘은 2022년 6월 5일 일요일이야 
+금요일에 왔다가 본가로 돌아가는 날이지 
+금요일에 탕수육에 불닭부터 시작해서 
+토요일 닭복음탕 월남쌈까지 너무 맛있었어 
+그리고 오늘 먹었던 떡만두국도 최고여써 역시 엑시는 요리를 잘한다니까 
+엑시랑 있으면 시간이 너무 후딱가버려 
+너무 재밌어서 그런가바 집가기 싫다 
+집가기싫음+공부하기 싫음 이 겹쳤어 
+근데 이제 시험끝나고 지금까지 놀았으니 다시언능 시작해야해 
+이제 내가 시험공부시작한지 5개월이 지났어 딱 반이지난거지 
+지금까지 잘기다려준거 너무고맙고 
+앞으로도 좀만 참아줘 
+시험끝나고 언능 엑시랑 재밌게 놀고싶다! 
+엑시도 코딩 열심히 하는거 같으니 꼭 좋은결과 있을거야 화이팅!</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
