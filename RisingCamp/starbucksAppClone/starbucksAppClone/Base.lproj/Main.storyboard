@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g48-i7-FdW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="starbucksAppClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="CnW-7q-856">
+                        <color key="badgeColor" red="0.68235294120000001" green="0.68235294120000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="93.75"/>
+        </scene>
+        <!--Pay View Controller-->
+        <scene sceneID="2vf-Gh-n6w">
+            <objects>
+                <viewController storyboardIdentifier="PayViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ovy-SY-JjE" customClass="PayViewController" customModule="starbucksAppClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ljK-3l-gl1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paybanner" translatesAutoresizingMaskIntoConstraints="NO" id="9jE-C0-gA2">
+                                <rect key="frame" x="0.0" y="686.5" width="414" height="91.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9jE-C0-gA2" secondAttribute="height" multiplier="828:183" id="kbQ-NW-96a"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pK-Pj-LkV">
+                                <rect key="frame" x="20.5" y="145" width="373" height="471"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardPlus" translatesAutoresizingMaskIntoConstraints="NO" id="j8X-Ga-mqk">
+                                        <rect key="frame" x="38" y="20" width="297" height="188.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="j8X-Ga-mqk" secondAttribute="height" multiplier="674:428" id="Naw-L8-6CH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스타벅스 카드를 등록해보세요." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgM-Tc-Xv1">
+                                        <rect key="frame" x="72.5" y="224" width="228.5" height="23"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwe-O0-yJo">
+                                        <rect key="frame" x="74.5" y="267" width="224.5" height="36"/>
+                                        <string key="text">매장과 사이렌오더에서 쉽고 편리하게 
+사용할 수 있고, 별도 적립할 수 있습니다.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="j8X-Ga-mqk" firstAttribute="height" secondItem="0pK-Pj-LkV" secondAttribute="height" multiplier="0.4" id="D1x-Tn-IGM"/>
+                                    <constraint firstItem="XgM-Tc-Xv1" firstAttribute="centerY" secondItem="0pK-Pj-LkV" secondAttribute="centerY" id="XPm-Ax-yMJ"/>
+                                    <constraint firstItem="j8X-Ga-mqk" firstAttribute="top" secondItem="0pK-Pj-LkV" secondAttribute="top" constant="20" id="bkl-EB-sJt"/>
+                                    <constraint firstItem="j8X-Ga-mqk" firstAttribute="centerX" secondItem="0pK-Pj-LkV" secondAttribute="centerX" id="cgb-jG-eJw"/>
+                                    <constraint firstItem="cwe-O0-yJo" firstAttribute="centerX" secondItem="0pK-Pj-LkV" secondAttribute="centerX" id="eQU-p4-M7P"/>
+                                    <constraint firstItem="cwe-O0-yJo" firstAttribute="top" secondItem="XgM-Tc-Xv1" secondAttribute="bottom" constant="20" id="knL-0J-1G7"/>
+                                    <constraint firstItem="XgM-Tc-Xv1" firstAttribute="centerX" secondItem="0pK-Pj-LkV" secondAttribute="centerX" id="yYr-z7-B8t"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Tn-yf-1QE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9jE-C0-gA2" firstAttribute="leading" secondItem="0Tn-yf-1QE" secondAttribute="leading" id="EPL-w6-yHh"/>
+                            <constraint firstItem="0pK-Pj-LkV" firstAttribute="centerX" secondItem="ljK-3l-gl1" secondAttribute="centerX" id="NxZ-rh-awh"/>
+                            <constraint firstItem="9jE-C0-gA2" firstAttribute="trailing" secondItem="0Tn-yf-1QE" secondAttribute="trailing" id="ONs-90-42M"/>
+                            <constraint firstItem="0pK-Pj-LkV" firstAttribute="top" secondItem="0Tn-yf-1QE" secondAttribute="top" constant="5" id="PsP-05-3NG"/>
+                            <constraint firstItem="0Tn-yf-1QE" firstAttribute="bottom" secondItem="9jE-C0-gA2" secondAttribute="bottom" constant="35" id="R9V-Dd-6HL"/>
+                            <constraint firstItem="9jE-C0-gA2" firstAttribute="centerX" secondItem="ljK-3l-gl1" secondAttribute="centerX" id="czu-Qp-VG3"/>
+                            <constraint firstItem="0pK-Pj-LkV" firstAttribute="height" secondItem="0Tn-yf-1QE" secondAttribute="height" multiplier="0.7" id="ePi-O7-caD"/>
+                            <constraint firstItem="0pK-Pj-LkV" firstAttribute="width" secondItem="0Tn-yf-1QE" secondAttribute="width" multiplier="0.9" id="zif-IK-52p"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ds2-4N-Ngj"/>
+                    <connections>
+                        <outlet property="payView" destination="0pK-Pj-LkV" id="MVP-iL-E6V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w88-EQ-YEq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="-589.28571428571422"/>
+        </scene>
+        <!--Order-->
+        <scene sceneID="stt-ab-Kzo">
+            <objects>
+                <viewController storyboardIdentifier="OrderViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="G7d-CY-bps" customClass="OrderViewController" customModule="starbucksAppClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VKD-vl-hED">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DdB-vc-Oxr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Order" image="cup.and.saucer.fill" catalog="system" selectedImage="cup.and.saucer.fill" id="8su-qo-AWn">
+                        <color key="badgeColor" red="0.68235294120000001" green="0.68235294120000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yKO-t2-rnp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855.072463768116" y="-589.28571428571422"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nB0-rw-Vps">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="g48-i7-FdW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9ZM-Ji-IcZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.31372549020000001" green="0.68627450980000004" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.31372549019607843" green="0.68627450980392157" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Yd5-Md-RKW"/>
+                        <segue destination="TEH-ge-ekd" kind="relationship" relationship="viewControllers" id="XOf-oG-BOz"/>
+                        <segue destination="G7d-CY-bps" kind="relationship" relationship="viewControllers" id="ljE-Q0-ahO"/>
+                        <segue destination="s2c-jP-4Kw" kind="relationship" relationship="viewControllers" id="8yu-Lc-pYd"/>
+                        <segue destination="jru-s9-XKi" kind="relationship" relationship="viewControllers" id="lbt-kG-F7L"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tm3-uK-M1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+        </scene>
+        <!--Gift View Controller-->
+        <scene sceneID="Y5y-m3-YjN">
+            <objects>
+                <viewController storyboardIdentifier="GiftViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x0R-3O-QGd" customClass="GiftViewController" customModule="starbucksAppClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dQK-Ak-Yoc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="2LZ-bZ-Log">
+                                <rect key="frame" x="20" y="140" width="374" height="585"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PjY-Wa-yJv">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="168.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYs-7n-AXw">
+                                        <rect key="frame" x="0.0" y="208.5" width="374" height="168"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHf-c7-ZIM">
+                                        <rect key="frame" x="0.0" y="416.5" width="374" height="168.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BZ3-Bn-O6c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PjY-Wa-yJv" firstAttribute="height" secondItem="BZ3-Bn-O6c" secondAttribute="height" multiplier="0.25" id="PW6-eD-MVk"/>
+                            <constraint firstItem="VHf-c7-ZIM" firstAttribute="height" secondItem="BZ3-Bn-O6c" secondAttribute="height" multiplier="0.25" id="a6H-Wm-hML"/>
+                            <constraint firstItem="2LZ-bZ-Log" firstAttribute="leading" secondItem="BZ3-Bn-O6c" secondAttribute="leading" constant="20" id="dqX-a1-75c"/>
+                            <constraint firstItem="GYs-7n-AXw" firstAttribute="height" secondItem="BZ3-Bn-O6c" secondAttribute="height" multiplier="0.25" id="fjx-Vr-IVG"/>
+                            <constraint firstItem="BZ3-Bn-O6c" firstAttribute="trailing" secondItem="2LZ-bZ-Log" secondAttribute="trailing" constant="20" id="x3s-Uv-AXV"/>
+                            <constraint firstItem="2LZ-bZ-Log" firstAttribute="top" secondItem="BZ3-Bn-O6c" secondAttribute="top" id="ydw-2g-NCK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8xp-T9-I7k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2i2-pI-qyL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="782.8125"/>
+        </scene>
+        <!--Other-->
+        <scene sceneID="mLc-tA-7cT">
+            <objects>
+                <viewController storyboardIdentifier="OtherViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jru-s9-XKi" customClass="OtherViewController" customModule="starbucksAppClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TDE-Ev-N1N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cQO-5B-vNd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Other" image="ellipsis" catalog="system" selectedImage="ellipsis" id="1kS-1k-Q6Z">
+                        <color key="badgeColor" red="0.68235294120000001" green="0.68235294120000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FIR-J5-IPl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855.072463768116" y="782.8125"/>
+        </scene>
+        <!--Pay-->
+        <scene sceneID="dp0-fE-QAO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TEH-ge-ekd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pay" image="creditcard.fill" catalog="system" selectedImage="creditcard.fill" id="T6a-wp-FYU">
+                        <color key="badgeColor" red="0.68235294117647061" green="0.68235294117647061" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="7L8-U5-Xqa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ovy-SY-JjE" kind="relationship" relationship="rootViewController" id="5mZ-ZC-inh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5j0-U6-pue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="-589.28571428571422"/>
+        </scene>
+        <!--Gift-->
+        <scene sceneID="26j-Pl-4UM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s2c-jP-4Kw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Gift" image="gift.fill" catalog="system" selectedImage="gift.fill" id="0dz-sM-Rth">
+                        <color key="badgeColor" red="0.68235294120000001" green="0.68235294120000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="5pg-Vw-Iq1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="x0R-3O-QGd" kind="relationship" relationship="rootViewController" id="GDx-0u-DEg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDQ-cn-aaJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="782.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cardPlus" width="337" height="214"/>
+        <image name="creditcard.fill" catalog="system" width="128" height="88"/>
+        <image name="cup.and.saucer.fill" catalog="system" width="128" height="91"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="gift.fill" catalog="system" width="128" height="124"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="paybanner" width="414" height="91.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
