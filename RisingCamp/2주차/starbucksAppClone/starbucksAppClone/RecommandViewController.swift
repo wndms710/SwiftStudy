@@ -19,6 +19,7 @@ class RecommandViewController: UIViewController {
         
 //        self.navigationItem.backButtonTitle = nil
 //        self.navigationItem.backBarButtonItem?.tintColor = .darkGray
+
     }
     
     @IBAction func tapBottomView(_ sender: Any) {

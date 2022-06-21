@@ -18,8 +18,6 @@ class AmericanoViewController: UIViewController {
         
         iceView.alpha = 1
         hotView.alpha = 0
-
-        self.tabBarController?.tabBar.isHidden = true
     }
     
     @IBAction func switchViews(_ sender: UISegmentedControl) {
@@ -31,5 +29,5 @@ class AmericanoViewController: UIViewController {
             hotView.alpha = 0
         }
     }
-
+    
 }

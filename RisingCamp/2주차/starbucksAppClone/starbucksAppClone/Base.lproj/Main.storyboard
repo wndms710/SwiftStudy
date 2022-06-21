@@ -803,7 +803,7 @@
         <!--Americano View Controller-->
         <scene sceneID="zn9-Cb-0ix">
             <objects>
-                <viewController storyboardIdentifier="AmericanoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dWM-mm-K1z" customClass="AmericanoViewController" customModule="starbucksAppClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AmericanoViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dWM-mm-K1z" customClass="AmericanoViewController" customModule="starbucksAppClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e5q-RJ-2ET">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1543,7 +1543,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBO-Il-BAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6339.130434782609" y="4.3526785714285712"/>
+            <point key="canvasLocation" x="5552" y="4"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eh3-Um-q3J">
@@ -1602,7 +1602,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oqb-Rw-cou" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5037.68115942029" y="4.3526785714285712"/>
+            <point key="canvasLocation" x="3951" y="4"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="p6B-IB-gFu">

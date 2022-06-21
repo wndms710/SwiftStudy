@@ -35,7 +35,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             blurView.removeFromSuperview()
         }
         
-        showAlert(message: "이어서 입력하시겠습니까?")
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
@@ -46,12 +45,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let effect = UIBlurEffect(style: .regular)
         blurView = UIVisualEffectView(effect: effect)
         blurView?.frame = window.frame
+
         window.addSubview(blurView!)
+        
+        showAlert(message: "이어서 입력하시겠습니까?")
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
+        
+
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
