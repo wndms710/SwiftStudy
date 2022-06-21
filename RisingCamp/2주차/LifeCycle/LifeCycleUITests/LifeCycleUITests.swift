@@ -2,7 +2,7 @@
 //  LifeCycleUITests.swift
 //  LifeCycleUITests
 //
-//  Created by 조주은 on 2022/06/14.
+//  Created by 조주은 on 2022/06/20.
 //
 
 import XCTest

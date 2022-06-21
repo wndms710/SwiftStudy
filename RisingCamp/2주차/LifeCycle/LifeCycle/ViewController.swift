@@ -2,56 +2,38 @@
 //  ViewController.swift
 //  LifeCycle
 //
-//  Created by 조주은 on 2022/06/14.
+//  Created by 조주은 on 2022/06/20.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var textField: UITextField!
     
-    @IBOutlet weak var uiTextField: UITextField!
-    
-    @IBAction func didTapAction(_ sender: Any) {
-        
-        let data : String = uiTextField.text!
-        
+    // 1. property
+    @IBAction func goSecondView(_ sender: Any) {
         let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
         
-        secondViewController.result = data
-
+        secondViewController.text = self.textField.text ?? "None"
         
-        self.present(secondViewController, animated: true, completion: nil)
-        
+        self.present(secondViewController, animated: true)
     }
     
-
+    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        print("First : viewDidLoad")
 
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        print("First : viewWillAppear")
+    // 2. segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is SecondViewController {
+            let secondViewController = segue.destination as! SecondViewController
+        
+        secondViewController.text = self.textField.text ?? "NoneSegue"
+        }
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        print("First : viewDidAppear")
-
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        print("First : viewWillDisappear")
-
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        print("First : viewDidDisappear")
-
-    }
-
 
 }
 

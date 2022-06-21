@@ -20,6 +20,9 @@
 		4105C728285B5AA000DBE16D /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4105C726285B5AA000DBE16D /* OrderViewController.swift */; };
 		4105C72C285B5AB100DBE16D /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4105C72A285B5AB100DBE16D /* GiftViewController.swift */; };
 		4105C730285B5ABF00DBE16D /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4105C72E285B5ABF00DBE16D /* OtherViewController.swift */; };
+		4153766528618F0300B2DFC7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4153766428618F0300B2DFC7 /* StartViewController.swift */; };
+		4159E0D928610023000E90B8 /* AmericanoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159E0D828610023000E90B8 /* AmericanoViewController.swift */; };
+		4193561B2860E04F00B27680 /* RecommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4193561A2860E04F00B27680 /* RecommandViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		4105C726285B5AA000DBE16D /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		4105C72A285B5AB100DBE16D /* GiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
 		4105C72E285B5ABF00DBE16D /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		4153766428618F0300B2DFC7 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		4159E0D828610023000E90B8 /* AmericanoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmericanoViewController.swift; sourceTree = "<group>"; };
+		4193561A2860E04F00B27680 /* RecommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 				4105C6F6285B578E00DBE16D /* ViewController.swift */,
 				4105C6F8285B578E00DBE16D /* Main.storyboard */,
 				4105C6FB285B578F00DBE16D /* Assets.xcassets */,
+				4193561A2860E04F00B27680 /* RecommandViewController.swift */,
+				4153766428618F0300B2DFC7 /* StartViewController.swift */,
+				4159E0D828610023000E90B8 /* AmericanoViewController.swift */,
 				4105C72E285B5ABF00DBE16D /* OtherViewController.swift */,
 				4105C726285B5AA000DBE16D /* OrderViewController.swift */,
 				4105C72A285B5AB100DBE16D /* GiftViewController.swift */,
@@ -271,10 +280,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4105C6F7285B578E00DBE16D /* ViewController.swift in Sources */,
+				4159E0D928610023000E90B8 /* AmericanoViewController.swift in Sources */,
 				4105C728285B5AA000DBE16D /* OrderViewController.swift in Sources */,
 				4105C730285B5ABF00DBE16D /* OtherViewController.swift in Sources */,
 				4105C6F3285B578E00DBE16D /* AppDelegate.swift in Sources */,
+				4153766528618F0300B2DFC7 /* StartViewController.swift in Sources */,
 				4105C6F5285B578E00DBE16D /* SceneDelegate.swift in Sources */,
+				4193561B2860E04F00B27680 /* RecommandViewController.swift in Sources */,
 				4105C72C285B5AB100DBE16D /* GiftViewController.swift in Sources */,
 				4105C724285B5A8F00DBE16D /* PayViewController.swift in Sources */,
 			);
