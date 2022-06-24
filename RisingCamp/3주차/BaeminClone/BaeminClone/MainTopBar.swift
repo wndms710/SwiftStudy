@@ -45,13 +45,12 @@ class MainTopBar: TabmanViewController {
         bar.layout.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         // 버튼 글씨 커스텀
         bar.buttons.customize { (button) in
-            button.tintColor = UIColor(red: 159, green: 159, blue: 159, alpha: 1)
-            button.selectedTintColor = .white
+            button.tintColor = .darkGray
+            button.selectedTintColor = .black
         }
         
         // 선택한 부분 민트색
         bar.indicator.weight = .medium
-        bar.indicator.backgroundColor = UIColor(red: 94, green: 190, blue: 187, alpha: 1)
         
         // bar 경계 스크롤 할 때 그냥 두기
         bar.indicator.overscrollBehavior = .none

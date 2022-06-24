@@ -17,6 +17,9 @@ class TopBannerTableViewCell: UITableViewCell {
         bannerCollectionView.delegate = self
         bannerCollectionView.dataSource = self
         
+        let bannerCell = UINib(nibName: "CollectionViewCell", bundle: nil)
+        bannerCollectionView.register(bannerCell, forCellWithReuseIdentifier: "CollectionViewCell")
+        
         bannerTimer()
         
     }

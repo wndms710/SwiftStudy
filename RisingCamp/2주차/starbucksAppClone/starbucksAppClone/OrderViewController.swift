@@ -17,6 +17,11 @@ class OrderViewController: UIViewController {
         
         self.navigationItem.title = "Order"
         
+        self.navigationItem.hidesBackButton = true
+        
+        self.navigationItem.backButtonTitle = nil
+        self.navigationItem.backBarButtonItem?.tintColor = .darkGray
+        
 
 
     }

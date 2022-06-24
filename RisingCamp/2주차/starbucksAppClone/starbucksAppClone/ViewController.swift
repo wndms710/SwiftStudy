@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationItem.title = "What's New"
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
