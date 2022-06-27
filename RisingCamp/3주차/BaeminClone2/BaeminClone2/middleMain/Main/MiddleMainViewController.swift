@@ -7,17 +7,20 @@
 
 import UIKit
 
-protocol PagingTabbarDelegate {
-    func scrollToIndex(to index: Int)
-}
 
 class MiddleMainViewController: UIViewController {
     // 상단 탭바
     @IBOutlet weak var topBarCollectionView: UICollectionView!
     var topBarTitleList: [String] = ["배민1", "배달", "포장", "B마트", "배민스토어", "쇼핑라이브", "선물하기", "전국별미"]
-        
+
     // 하단 탭바
     @IBOutlet weak var bottomView: UIView!
+    
+    @IBAction func tapBottomButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+        
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,17 +39,13 @@ class MiddleMainViewController: UIViewController {
         
         topBarCollectionView.delegate = self
         topBarCollectionView.dataSource = self
-        
+
         let topBarCell = UINib(nibName: "TopBarCollectionViewCell", bundle: nil)
         topBarCollectionView.register(topBarCell, forCellWithReuseIdentifier: "TopBarCollectionViewCell")
-        topBarCollectionView.selectItem(at: IndexPath(row: 0, section: 0), animated: true, scrollPosition: [])
     }
-    
-    @IBAction func tapBottomHomeButtom(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
-    }
-
 }
+ 
+
 
 // top bar
 extension MiddleMainViewController: UICollectionViewDelegate, UICollectionViewDataSource {

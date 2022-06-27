@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="SnsgoodTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="SnsgoodTableViewCell" rowHeight="360" id="KGk-i7-Jjw" customClass="SnsgoodTableViewCell" customModule="BaeminClone2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="650" height="360"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="650" height="360"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SNS에서 뜨는 맛집!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wr6-Js-YlU">
+                        <rect key="frame" x="20" y="20" width="199" height="30"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodfinger" translatesAutoresizingMaskIntoConstraints="NO" id="bO1-uz-6MG">
+                        <rect key="frame" x="219" y="7" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Dbf-LZ-fEA"/>
+                            <constraint firstAttribute="width" constant="50" id="fpI-ep-7A6"/>
+                        </constraints>
+                    </imageView>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="g40-oa-4E8">
+                        <rect key="frame" x="0.0" y="57" width="650" height="303"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="VF7-O5-dIF">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bO1-uz-6MG" firstAttribute="centerY" secondItem="Wr6-Js-YlU" secondAttribute="centerY" constant="-3" id="5YK-Bu-Zh2"/>
+                    <constraint firstItem="g40-oa-4E8" firstAttribute="top" secondItem="bO1-uz-6MG" secondAttribute="bottom" id="Fby-OF-aKh"/>
+                    <constraint firstItem="Wr6-Js-YlU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="IL4-8T-YwN"/>
+                    <constraint firstItem="Wr6-Js-YlU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="e4l-5G-F0b"/>
+                    <constraint firstItem="g40-oa-4E8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eOD-le-dmj"/>
+                    <constraint firstAttribute="bottom" secondItem="g40-oa-4E8" secondAttribute="bottom" id="fcF-mx-A9z"/>
+                    <constraint firstAttribute="trailing" secondItem="g40-oa-4E8" secondAttribute="trailing" id="jAp-mc-Gg8"/>
+                    <constraint firstItem="bO1-uz-6MG" firstAttribute="leading" secondItem="Wr6-Js-YlU" secondAttribute="trailing" id="jUt-SX-xlv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="snsCollectionView" destination="g40-oa-4E8" id="Amb-Ze-DJs"/>
+            </connections>
+            <point key="canvasLocation" x="376.81159420289856" y="160.04464285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="goodfinger" width="34.5" height="36.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

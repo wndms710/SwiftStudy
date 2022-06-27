@@ -215,6 +215,7 @@
                     <view key="view" contentMode="scaleToFill" id="hKA-hC-hCf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="697.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qfW-Ha-R9h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
@@ -229,6 +230,7 @@
                     <view key="view" contentMode="scaleToFill" id="0hm-Vy-c6u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="697.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1xi-yp-TKo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
@@ -243,6 +245,7 @@
                     <view key="view" contentMode="scaleToFill" id="07L-pw-3uW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="697.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="pzj-1c-BcC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
@@ -257,6 +260,7 @@
                     <view key="view" contentMode="scaleToFill" id="DnE-1D-AsB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="697.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BeR-KN-zrr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
@@ -271,6 +275,7 @@
                     <view key="view" contentMode="scaleToFill" id="UOt-5Q-3sG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="697.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zna-lp-ODl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
@@ -285,6 +290,7 @@
                     <view key="view" contentMode="scaleToFill" id="Y4X-FC-md9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="697.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uP8-kT-lkW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
@@ -299,6 +305,7 @@
                     <view key="view" contentMode="scaleToFill" id="6rt-Wg-0hU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="697.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="EMO-fD-Vyh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
