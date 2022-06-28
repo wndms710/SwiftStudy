@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var dataList: [myData] = []
     
+    var switchIsOn: [Bool] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,6 +47,8 @@ class ViewController: UIViewController {
         
         let cell = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(cell, forCellReuseIdentifier: "TableViewCell")
+        
+        settingSwitch()
     }
 }
 
@@ -55,21 +59,38 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return dataList.count
     }
     
+    func settingSwitch() {
+        for _ in 1...self.dataList.count {
+            self.switchIsOn.append(false)
+        }
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         let data: myData = dataList[indexPath.row]
         
+        cell.mainVC = self
+        
         cell.name.text = data.name
         cell.profileText.text = data.profileText
-        
-
+        cell.mySwitch.isOn = self.switchIsOn[indexPath.row]
         
         return cell
     }
+    
+    func updateSwitch(_ cell: Any, _ state: Bool) {
+        let index = tableView.indexPath(for: cell as! UITableViewCell)
+        switchIsOn[(index?.row)!] = state
+        tableView.reloadData()
+    }
+    
 }
+
 
 extension ViewController {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
+
 }
+

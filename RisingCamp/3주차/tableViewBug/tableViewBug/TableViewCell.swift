@@ -8,7 +8,9 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
+    
+    var mainVC: ViewController?
+    
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var profileText: UILabel!
     @IBOutlet weak var mySwitch: UISwitch! {
@@ -16,6 +18,10 @@ class TableViewCell: UITableViewCell {
             mySwitch.isOn = false
         }
     }
+    @IBAction func switchValueChanged(_ sender: Any) {
+        mainVC?.updateSwitch(self, mySwitch.isOn)
+    }
+    
 
     
     override func awakeFromNib() {
@@ -31,7 +37,6 @@ class TableViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-  
         self.mySwitch.isOn = false
     }
     

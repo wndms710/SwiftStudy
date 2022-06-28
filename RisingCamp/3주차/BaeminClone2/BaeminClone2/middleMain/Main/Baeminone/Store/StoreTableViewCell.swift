@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class StoreTableViewCell: UITableViewCell {
 
@@ -25,6 +26,13 @@ class StoreTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+
+    }
+    
+    func update(object: NSManagedObject) {
+        minimun.text = object.value(forKey: "minimum") as? String
+        tip.text = object.value(forKey: "tip") as? String
+        time.text = object.value(forKey: "time") as? String
 
     }
     
