@@ -18,6 +18,21 @@
 		4149CCCE2870681700BAD779 /* MultiThreadGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4149CCCD2870681700BAD779 /* MultiThreadGameUITests.swift */; };
 		4149CCD02870681700BAD779 /* MultiThreadGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4149CCCF2870681700BAD779 /* MultiThreadGameUITestsLaunchTests.swift */; };
 		4149CCE12870B10300BAD779 /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4149CCE02870B10300BAD779 /* SoundController.swift */; };
+		415442722873EEE3003AB696 /* HowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415442712873EEE3003AB696 /* HowViewController.swift */; };
+		415442742873F1DE003AB696 /* Kyobo Handwriting 2019.otf in Resources */ = {isa = PBXBuildFile; fileRef = 415442732873F1DE003AB696 /* Kyobo Handwriting 2019.otf */; };
+		415442772873F73C003AB696 /* JalnanOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 415442762873F73C003AB696 /* JalnanOTF.otf */; };
+		415442792874008F003AB696 /* ReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415442782874008F003AB696 /* ReadyViewController.swift */; };
+		4155F1F7287196D300CC88C8 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155F1F6287196D300CC88C8 /* FinishViewController.swift */; };
+		4155F1F92871A39F00CC88C8 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155F1F82871A39F00CC88C8 /* PopupViewController.swift */; };
+		4155F1FB2871C99E00CC88C8 /* characterFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155F1FA2871C99E00CC88C8 /* characterFile.swift */; };
+		4155F2022871E59C00CC88C8 /* 짱구 오프닝.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4155F1FD2871E59A00CC88C8 /* 짱구 오프닝.mp3 */; };
+		4155F2032871E59C00CC88C8 /* 짱구 히로시.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4155F1FE2871E59A00CC88C8 /* 짱구 히로시.mp3 */; };
+		4155F2042871E59C00CC88C8 /* 짱구 떡잎유치원.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4155F1FF2871E59B00CC88C8 /* 짱구 떡잎유치원.mp3 */; };
+		4155F2052871E59C00CC88C8 /* 짱구 엉뚱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4155F2002871E59B00CC88C8 /* 짱구 엉뚱.mp3 */; };
+		4155F2062871E59C00CC88C8 /* 짱구 평화.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4155F2012871E59C00CC88C8 /* 짱구 평화.mp3 */; };
+		4155F2082871F94200CC88C8 /* ResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155F2072871F94200CC88C8 /* ResultCollectionViewCell.swift */; };
+		41BDF231287147AE00566CD8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BDF230287147AE00566CD8 /* GameViewController.swift */; };
+		41BDF2332871763F00566CD8 /* CrayonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BDF2322871763F00566CD8 /* CrayonCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +68,21 @@
 		4149CCCD2870681700BAD779 /* MultiThreadGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiThreadGameUITests.swift; sourceTree = "<group>"; };
 		4149CCCF2870681700BAD779 /* MultiThreadGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiThreadGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4149CCE02870B10300BAD779 /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
+		415442712873EEE3003AB696 /* HowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowViewController.swift; sourceTree = "<group>"; };
+		415442732873F1DE003AB696 /* Kyobo Handwriting 2019.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kyobo Handwriting 2019.otf"; sourceTree = "<group>"; };
+		415442762873F73C003AB696 /* JalnanOTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = JalnanOTF.otf; sourceTree = "<group>"; };
+		415442782874008F003AB696 /* ReadyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyViewController.swift; sourceTree = "<group>"; };
+		4155F1F6287196D300CC88C8 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		4155F1F82871A39F00CC88C8 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		4155F1FA2871C99E00CC88C8 /* characterFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = characterFile.swift; sourceTree = "<group>"; };
+		4155F1FD2871E59A00CC88C8 /* 짱구 오프닝.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "짱구 오프닝.mp3"; sourceTree = "<group>"; };
+		4155F1FE2871E59A00CC88C8 /* 짱구 히로시.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "짱구 히로시.mp3"; sourceTree = "<group>"; };
+		4155F1FF2871E59B00CC88C8 /* 짱구 떡잎유치원.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "짱구 떡잎유치원.mp3"; sourceTree = "<group>"; };
+		4155F2002871E59B00CC88C8 /* 짱구 엉뚱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "짱구 엉뚱.mp3"; sourceTree = "<group>"; };
+		4155F2012871E59C00CC88C8 /* 짱구 평화.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "짱구 평화.mp3"; sourceTree = "<group>"; };
+		4155F2072871F94200CC88C8 /* ResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCollectionViewCell.swift; sourceTree = "<group>"; };
+		41BDF230287147AE00566CD8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		41BDF2322871763F00566CD8 /* CrayonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +133,8 @@
 		4149CCA82870681500BAD779 /* MultiThreadGame */ = {
 			isa = PBXGroup;
 			children = (
+				415442752873F1E5003AB696 /* font */,
+				4155F1FC2871E57000CC88C8 /* Music */,
 				4149CCDF287075E300BAD779 /* App */,
 				4149CCDC2870695300BAD779 /* Model */,
 				4149CCDD2870695900BAD779 /* VIew */,
@@ -134,6 +166,9 @@
 			isa = PBXGroup;
 			children = (
 				4149CCB22870681500BAD779 /* MultiThreadGame.xcdatamodeld */,
+				41BDF2322871763F00566CD8 /* CrayonCollectionViewCell.swift */,
+				4155F1FA2871C99E00CC88C8 /* characterFile.swift */,
+				4155F2072871F94200CC88C8 /* ResultCollectionViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +187,11 @@
 			children = (
 				4149CCAD2870681500BAD779 /* ViewController.swift */,
 				4149CCE02870B10300BAD779 /* SoundController.swift */,
+				41BDF230287147AE00566CD8 /* GameViewController.swift */,
+				4155F1F6287196D300CC88C8 /* FinishViewController.swift */,
+				4155F1F82871A39F00CC88C8 /* PopupViewController.swift */,
+				415442712873EEE3003AB696 /* HowViewController.swift */,
+				415442782874008F003AB696 /* ReadyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -163,6 +203,27 @@
 				4149CCAB2870681500BAD779 /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		415442752873F1E5003AB696 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				415442732873F1DE003AB696 /* Kyobo Handwriting 2019.otf */,
+				415442762873F73C003AB696 /* JalnanOTF.otf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		4155F1FC2871E57000CC88C8 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				4155F1FF2871E59B00CC88C8 /* 짱구 떡잎유치원.mp3 */,
+				4155F2002871E59B00CC88C8 /* 짱구 엉뚱.mp3 */,
+				4155F1FD2871E59A00CC88C8 /* 짱구 오프닝.mp3 */,
+				4155F2012871E59C00CC88C8 /* 짱구 평화.mp3 */,
+				4155F1FE2871E59A00CC88C8 /* 짱구 히로시.mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +332,13 @@
 			files = (
 				4149CCB92870681700BAD779 /* LaunchScreen.storyboard in Resources */,
 				4149CCB62870681700BAD779 /* Assets.xcassets in Resources */,
+				4155F2042871E59C00CC88C8 /* 짱구 떡잎유치원.mp3 in Resources */,
+				4155F2032871E59C00CC88C8 /* 짱구 히로시.mp3 in Resources */,
+				4155F2022871E59C00CC88C8 /* 짱구 오프닝.mp3 in Resources */,
+				4155F2062871E59C00CC88C8 /* 짱구 평화.mp3 in Resources */,
+				4155F2052871E59C00CC88C8 /* 짱구 엉뚱.mp3 in Resources */,
+				415442772873F73C003AB696 /* JalnanOTF.otf in Resources */,
+				415442742873F1DE003AB696 /* Kyobo Handwriting 2019.otf in Resources */,
 				4149CCB12870681500BAD779 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,11 +364,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41BDF2332871763F00566CD8 /* CrayonCollectionViewCell.swift in Sources */,
 				4149CCAE2870681500BAD779 /* ViewController.swift in Sources */,
+				415442792874008F003AB696 /* ReadyViewController.swift in Sources */,
 				4149CCE12870B10300BAD779 /* SoundController.swift in Sources */,
 				4149CCB42870681500BAD779 /* MultiThreadGame.xcdatamodeld in Sources */,
 				4149CCAA2870681500BAD779 /* AppDelegate.swift in Sources */,
+				4155F1F92871A39F00CC88C8 /* PopupViewController.swift in Sources */,
+				4155F1F7287196D300CC88C8 /* FinishViewController.swift in Sources */,
+				4155F1FB2871C99E00CC88C8 /* characterFile.swift in Sources */,
+				4155F2082871F94200CC88C8 /* ResultCollectionViewCell.swift in Sources */,
+				41BDF231287147AE00566CD8 /* GameViewController.swift in Sources */,
 				4149CCAC2870681500BAD779 /* SceneDelegate.swift in Sources */,
+				415442722873EEE3003AB696 /* HowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
