@@ -9,8 +9,28 @@ import UIKit
 import AVFoundation
 
 class GameViewController: UIViewController, NextViewControllerDelegate {
-    func nextViewControllerResponse(_ soundOn: Bool) {
+    func soundChanged(_ soundOn: Bool) {
+        print("Game: toGameVC delegate")
         self.soundOn = soundOn
+        print("soundChanged")
+    }
+
+//    func nextViewControllerResponse(_ soundOn: Bool) {
+//        print("soundOn Changed")
+//        self.soundOn = soundOn
+//        let startVC = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+//        let finishVC = self.storyboard?.instantiateViewController(withIdentifier: "FinishViewController") as! FinishViewController
+//        finishVC.delegate = startVC
+////        finishVC.delegate?.nextViewControllerResponse(finishVC.soundOn)
+//        print("gameVC delegate")
+//    }
+    func changedSoundButton() {
+        print("changedSoundButton")
+        if self.audioPlayer!.isPlaying {
+            soundImg?.image = UIImage(named: "soundOn")
+        } else {
+            soundImg?.image = UIImage(named: "soundOff")
+        }
     }
     
     
@@ -62,8 +82,8 @@ class GameViewController: UIViewController, NextViewControllerDelegate {
             finishVC.resultImage = self.resultImg
             finishVC.timeArr = self.elapsedArr
             finishVC.audioPlayer = self.audioPlayer
-//            finishVC.soundOn = self.soundOn
-            finishVC.delegate = self
+            finishVC.soundOn = self.soundOn
+            finishVC.delegateGame = self
             
             self.navigationController?.pushViewController(finishVC, animated: true)
         }
@@ -186,6 +206,9 @@ class GameViewController: UIViewController, NextViewControllerDelegate {
         
         wordView.clipsToBounds = true
         wordView.layer.cornerRadius = 40
+        
+//        let finishVC = self.storyboard?.instantiateViewController(withIdentifier: "FinishViewController") as! FinishViewController
+//        finishVC.delegate = self
 
     }
     
@@ -225,6 +248,11 @@ class GameViewController: UIViewController, NextViewControllerDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+//        let finishVC = self.storyboard?.instantiateViewController(withIdentifier: "FinishViewController") as! FinishViewController
+//        finishVC.delegate = self
+        
+        print("gameVC Appear")
+        print("soundOn: \(self.soundOn)")
         DispatchQueue.global().async {
             self.randomSet()
             
@@ -239,13 +267,13 @@ class GameViewController: UIViewController, NextViewControllerDelegate {
             }
             
             DispatchQueue.main.async {
+
                 if self.soundOn == true {
                     self.soundImg.image = UIImage(named: "soundOn")
                 } else if self.soundOn == false {
                     self.soundImg.image = UIImage(named: "soundOff")
                 }
             }
-        
         
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3)) {
                 self.startTimer()
@@ -301,6 +329,7 @@ class GameViewController: UIViewController, NextViewControllerDelegate {
         finishVC.timeArr = self.elapsedArr
         finishVC.audioPlayer = self.audioPlayer
         finishVC.soundOn = self.soundOn
+        finishVC.delegateGame = self
         
         print("timer?.invalidate()")
         timer?.invalidate()
@@ -344,6 +373,5 @@ class GameViewController: UIViewController, NextViewControllerDelegate {
             
         }
     }
-
     
 }

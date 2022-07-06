@@ -10,13 +10,23 @@ import AVFoundation
 
 //MARK: - protocol (전 VC로 데이터 전달)
 protocol NextViewControllerDelegate {
-    func nextViewControllerResponse(_ soundOn: Bool)
+    func soundChanged(_ soundOn: Bool)    
+//    func nextViewControllerResponse(_ soundOn: Bool)
 }
 
 class FinishViewController: UIViewController {
     
+    func changedSoundButton() {
+        if self.audioPlayer!.isPlaying {
+            soundImg.image = UIImage(named: "soundOn")
+        } else {
+            soundImg.image = UIImage(named: "soundOff")
+        }
+    }
+    
     //MARK: - delegate 선언 (전 VC로 데이터 전달)
-    var delegate: NextViewControllerDelegate?
+    var delegateStart: NextViewControllerDelegate?
+    var delegateGame: NextViewControllerDelegate?
     
     //MARK: - 결과 이미지 collection
     @IBOutlet weak var collectionView: UICollectionView!
@@ -32,7 +42,8 @@ class FinishViewController: UIViewController {
         let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
         homeVC.audioPlayer = self.audioPlayer
 //        homeVC.soundOn = self.soundOn
-        self.delegate?.nextViewControllerResponse(soundOn)
+//        self.delegateStart?.soundChanged(self.soundOn)
+        homeVC.changedSoundButton(self.soundOn)
         self.navigationController?.popToRootViewController(animated: true)
     }
     
@@ -50,7 +61,8 @@ class FinishViewController: UIViewController {
         let gameVC = self.storyboard?.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
         gameVC.audioPlayer = self.audioPlayer
 //        gameVC.soundOn = self.soundOn
-        self.delegate?.nextViewControllerResponse(soundOn)
+        self.delegateGame?.soundChanged(self.soundOn)
+//        gameVC.changedSoundButton()
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -74,12 +86,15 @@ class FinishViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        print("finishVC Appear")
+        print("soundOn: \(self.soundOn)")
+        
         if self.soundOn == true {
             self.soundImg.image = UIImage(named: "soundOn")
         } else if self.soundOn == false {
             self.soundImg.image = UIImage(named: "soundOff")
         }
-        
+
         self.randomImg.image = imgArr.randomElement()
         self.score.text = "\(resultImage.count)장!"
     }

@@ -9,8 +9,28 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController, NextViewControllerDelegate {
-    func nextViewControllerResponse(_ soundOn: Bool) {
+
+    func soundChanged(_ soundOn: Bool) {
+        print("Start: toHome delegate")
         self.soundOn = soundOn
+        print("soundChanged")
+    }
+    
+//    func nextViewControllerResponse(_ soundOn: Bool) {
+//        print("homeVC delegate")
+//        self.soundOn = soundOn
+//    }
+    
+    func changedSoundButton(_ soundOn: Bool) {
+        print("changedSoundButton")
+        self.soundOn = soundOn
+        print("home.soundOn = \(self.soundOn)")
+//        if self.audioPlayer!.isPlaying {
+//            soundImg?.image = UIImage(named: "soundOn")
+//        } else {
+//            soundImg?.image = UIImage(named: "soundOff")
+//        }
+
     }
      
     //MARK: - 사운드
@@ -19,6 +39,7 @@ class ViewController: UIViewController, NextViewControllerDelegate {
 
     @IBOutlet weak var soundImg: UIImageView! {
         didSet {
+            soundImg.image = UIImage(named: "soundOn")
             DispatchQueue.global().async {
                 self.playMusic()
             }
@@ -70,9 +91,10 @@ class ViewController: UIViewController, NextViewControllerDelegate {
     //MARK: - didLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.soundOn = true
         
-        let finishVC = self.storyboard?.instantiateViewController(withIdentifier: "FinishViewController") as! FinishViewController
-        finishVC.delegate = self
+//        let finishVC = self.storyboard?.instantiateViewController(withIdentifier: "FinishViewController") as! FinishViewController
+//        finishVC.delegateStart = self
     
     }
 
@@ -80,18 +102,23 @@ class ViewController: UIViewController, NextViewControllerDelegate {
         let gameVC = self.storyboard?.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
         gameVC.audioPlayer = self.audioPlayer
         gameVC.soundOn = self.soundOn
+        
         self.navigationController?.pushViewController(gameVC, animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        let finishVC = self.storyboard?.instantiateViewController(withIdentifier: "FinishViewController") as! FinishViewController
+        finishVC.delegateStart = self
+        
         print("homeView Appear")
         print("soundOn: \(soundOn)")
-        if self.soundOn == true {
-            self.soundImg.image = UIImage(named: "soundOn")
-        } else if self.soundOn == false {
-            self.soundImg.image = UIImage(named: "soundOff")
-        }
+//        if self.soundOn == true {
+//            self.soundImg.image = UIImage(named: "soundOn")
+//        } else if self.soundOn == false {
+//            self.soundImg.image = UIImage(named: "soundOff")
+//        }
     }
 }
 

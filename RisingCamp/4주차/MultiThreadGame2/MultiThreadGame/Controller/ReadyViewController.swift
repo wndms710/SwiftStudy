@@ -21,7 +21,7 @@ class ReadyViewController: UIViewController {
     
     // 타이머 시작
     public func startTimer() {
-        print("startTimer()")
+//        print("startTimer()")
 
 //         기존에 타이머 동작중이면 중지 처리
         if timer != nil && timer!.isValid {
@@ -38,7 +38,7 @@ class ReadyViewController: UIViewController {
     
     // 타이머 동작 func
     @objc func timerCallback() {
-        print("timerCallback(), timerNum: \(timerNum)")
+//        print("timerCallback(), timerNum: \(timerNum)")
         // timerNum이 0이면(60초 경과) 타이머 종료
         if (timerNum == 0) {
             timer?.invalidate()
