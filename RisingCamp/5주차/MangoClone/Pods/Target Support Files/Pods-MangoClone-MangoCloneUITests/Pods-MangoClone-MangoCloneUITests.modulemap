@@ -1,0 +1,6 @@
+framework module Pods_MangoClone_MangoCloneUITests {
+  umbrella header "Pods-MangoClone-MangoCloneUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
