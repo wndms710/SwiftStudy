@@ -207,10 +207,10 @@
                                     <constraint firstItem="xWJ-V6-JMm" firstAttribute="centerY" secondItem="eSK-bX-ing" secondAttribute="centerY" id="kuZ-ad-246"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7iv-qo-Rzr">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7iv-qo-Rzr">
                                 <rect key="frame" x="0.0" y="107.5" width="414" height="705.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Z5l-hZ-49Y">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Z5l-hZ-49Y">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -246,6 +246,7 @@
                     <navigationItem key="navigationItem" id="S9o-pN-bwQ"/>
                     <connections>
                         <outlet property="collectionView" destination="7iv-qo-Rzr" id="0om-Sh-o41"/>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="5gY-oj-CZp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

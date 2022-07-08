@@ -9,7 +9,9 @@ import UIKit
 import SnapKit
 
 class MainViewController: UIViewController {
+    //MARK: - properties
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet var mainView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,9 @@ class MainViewController: UIViewController {
         
         let middleCell = UINib(nibName: "MiddleCollectionViewCell", bundle: nil)
         collectionView.register(middleCell, forCellWithReuseIdentifier: "MiddleCollectionViewCell")
+        
+        let listCell = UINib(nibName: "ListCollectionViewCell", bundle: nil)
+        collectionView.register(listCell, forCellWithReuseIdentifier: "ListCollectionViewCell")
 
     }
 
@@ -43,7 +48,8 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell
         }
         else {
-            return UICollectionViewCell()
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ListCollectionViewCell", for: indexPath) as! ListCollectionViewCell
+            return cell
         }
     }
     
@@ -53,16 +59,17 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.size.width
-        let height = view.frame.height
+        let height = collectionView.frame.size.height
         if indexPath.row == 0 {
-            return CGSize(width: width, height: height * 0.16)
+            return CGSize(width: width, height: (height * 0.19))
         }
         else if indexPath.row == 1 {
-            return CGSize(width: width, height: height * 0.06)
+            return CGSize(width: width, height: (height * 0.16))
         }
         else {
-            return CGSize(width: width, height: height)
+            return CGSize(width: width / 2, height: height * 0.34)
         }
     }
     
+        
 }
