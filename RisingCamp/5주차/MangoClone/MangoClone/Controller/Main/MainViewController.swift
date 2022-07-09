@@ -6,15 +6,25 @@
 //
 
 import UIKit
-import SnapKit
+import CoreLocation
+import Alamofire
 
 class MainViewController: UIViewController {
     //MARK: - properties
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet var mainView: UIView!
+//    var locationManager: CLLocationManager?
+    var currentLocation: CLLocationCoordinate2D!
     
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        if locationManager == nil {
+//            let locationVC = self.storyboard?.instantiateViewController(withIdentifier: "LocationViewController") as! LocationViewController
+//            locationVC.modalPresentationStyle = .overCurrentContext
+//            self.present(locationVC, animated: true)
+//        }
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -27,12 +37,50 @@ class MainViewController: UIViewController {
         
         let listCell = UINib(nibName: "ListCollectionViewCell", bundle: nil)
         collectionView.register(listCell, forCellWithReuseIdentifier: "ListCollectionViewCell")
+        
+//        requestAuthorization()
 
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+//        if locationManager == nil {
+            let locationVC = self.storyboard?.instantiateViewController(withIdentifier: "LocationViewController") as! LocationViewController
+            locationVC.modalPresentationStyle = .overCurrentContext
+            self.present(locationVC, animated: true)
+//        }
+    }
+
+    
+//    private func requestAuthorization() {
+//        if locationManager == nil {
+//            locationManager = CLLocationManager()
+//            // 정확도 검사
+//            locationManager!.desiredAccuracy = kCLLocationAccuracyBest
+//            // 앱을 사용할 때 권한 요청
+//            locationManager!.requestWhenInUseAuthorization()
+//            locationManager!.delegate = self
+//            locationManagerDidChangeAuthorization(locationManager!)
+//        }
+//        else {
+//            // 사용자의 위치가 바뀌고 있는지 확인하는 메소드
+//            locationManager!.startMonitoringSignificantLocationChanges()
+//        }
+//    }
 
 
 }
 
+//extension MainViewController: CLLocationManagerDelegate {
+//    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+//        if manager.authorizationStatus == .authorizedWhenInUse {
+//            currentLocation = locationManager!.location?.coordinate
+//            LocationService.shared.longitude = currentLocation.longitude
+//            LocationService.shared.latitude = currentLocation.latitude
+//        }
+//    }
+//}
+
+//MARK: - collectionView extension
 extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 2

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41B6E3AF28794C6900FC5A5F /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B6E3AE28794C6900FC5A5F /* LocationService.swift */; };
 		41B9090B2876D28D0056870C /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B909092876D28D0056870C /* BannerCollectionViewCell.swift */; };
 		41B9090C2876D28D0056870C /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B9090A2876D28D0056870C /* BannerCollectionViewCell.xib */; };
 		41B9090F287703C90056870C /* MiddleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9090D287703C90056870C /* MiddleCollectionViewCell.swift */; };
@@ -55,6 +56,7 @@
 		0ED890365D7570D5AEA0A429 /* Pods-MangoCloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoCloneTests.release.xcconfig"; path = "Target Support Files/Pods-MangoCloneTests/Pods-MangoCloneTests.release.xcconfig"; sourceTree = "<group>"; };
 		1A8F728A695DF6BF715F706F /* Pods-MangoClone-MangoCloneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoClone-MangoCloneUITests.release.xcconfig"; path = "Target Support Files/Pods-MangoClone-MangoCloneUITests/Pods-MangoClone-MangoCloneUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2D7A526C058E9C3C73FCEF26 /* Pods_MangoClone_MangoCloneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangoClone_MangoCloneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B6E3AE28794C6900FC5A5F /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		41B909092876D28D0056870C /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		41B9090A2876D28D0056870C /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
 		41B9090D287703C90056870C /* MiddleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		41C1AE4D2876A92E00E5C3BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				41B6E3AE28794C6900FC5A5F /* LocationService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				41C1AE542876C06300E5C3BC /* LocationViewController.swift in Sources */,
 				41C1AE562876C87300E5C3BC /* MainViewController.swift in Sources */,
 				41C1AE522876B24000E5C3BC /* LoginViewController.swift in Sources */,
+				41B6E3AF28794C6900FC5A5F /* LocationService.swift in Sources */,
 				41B909132877208B0056870C /* ListCollectionViewCell.swift in Sources */,
 				41B9090B2876D28D0056870C /* BannerCollectionViewCell.swift in Sources */,
 				41C1AE1A2876A2B600E5C3BC /* SceneDelegate.swift in Sources */,
