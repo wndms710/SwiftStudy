@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ajU-cF-Xxb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -22,7 +22,117 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ixl-8p-hBM">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mangoLogo" translatesAutoresizingMaskIntoConstraints="NO" id="HxX-Ud-hhy">
+                                        <rect key="frame" x="103.5" y="259.5" width="207" height="99"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HxX-Ud-hhy" secondAttribute="height" multiplier="23:11" id="8Cf-ia-pGe"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zZd-JU-Rjv">
+                                        <rect key="frame" x="103.5" y="425.5" width="207" height="269"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tAc-eY-J0t">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="42"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="페이스북으로 계속하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Be3-3F-YAr">
+                                                        <rect key="frame" x="45.5" y="13" width="116" height="16"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.26402974130000001" green="0.30815306310000001" blue="0.71768355370000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstItem="Be3-3F-YAr" firstAttribute="centerY" secondItem="tAc-eY-J0t" secondAttribute="centerY" id="ZLI-BE-wbu"/>
+                                                    <constraint firstItem="Be3-3F-YAr" firstAttribute="centerX" secondItem="tAc-eY-J0t" secondAttribute="centerX" id="gN9-KN-H2g"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="m3O-rL-sRr" appends="YES" id="XrI-zO-frN"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmU-km-dAW">
+                                                <rect key="frame" x="0.0" y="57" width="207" height="41.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오톡으로 계속하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsg-r6-MsQ">
+                                                        <rect key="frame" x="45.5" y="12.5" width="116" height="16"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <color key="textColor" red="0.25882352941176467" green="0.20782455799999999" blue="0.211764276" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.98039215686274506" green="0.91046017410000002" blue="0.30960825089999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstItem="hsg-r6-MsQ" firstAttribute="centerX" secondItem="VmU-km-dAW" secondAttribute="centerX" id="afY-Cr-F49"/>
+                                                    <constraint firstItem="hsg-r6-MsQ" firstAttribute="centerY" secondItem="VmU-km-dAW" secondAttribute="centerY" id="paN-o6-uPC"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="GQe-7G-pBK" appends="YES" id="0Pz-ww-VG9"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUP-dv-33z">
+                                                <rect key="frame" x="0.0" y="113.5" width="207" height="42"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple로 계속하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIv-xA-w05">
+                                                        <rect key="frame" x="55" y="13" width="97.5" height="16"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="ZIv-xA-w05" firstAttribute="centerX" secondItem="mUP-dv-33z" secondAttribute="centerX" id="MRj-QU-eQ5"/>
+                                                    <constraint firstItem="ZIv-xA-w05" firstAttribute="centerY" secondItem="mUP-dv-33z" secondAttribute="centerY" id="rVR-lu-MOM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETh-bM-Xei">
+                                                <rect key="frame" x="0.0" y="170.5" width="207" height="41.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⎯ or ⎯" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="By6-14-aS2">
+                                                        <rect key="frame" x="62.5" y="5" width="82" height="32"/>
+                                                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="By6-14-aS2" firstAttribute="centerY" secondItem="ETh-bM-Xei" secondAttribute="centerY" id="33Q-AT-nE3"/>
+                                                    <constraint firstItem="By6-14-aS2" firstAttribute="centerX" secondItem="ETh-bM-Xei" secondAttribute="centerX" id="nmk-6E-8HM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KMM-eJ-9o1">
+                                                <rect key="frame" x="0.0" y="227" width="207" height="42"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일로 계속하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2C-f0-dic">
+                                                        <rect key="frame" x="57" y="13" width="93.5" height="16"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="a2C-f0-dic" firstAttribute="centerY" secondItem="KMM-eJ-9o1" secondAttribute="centerY" id="fM1-bC-TXq"/>
+                                                    <constraint firstItem="a2C-f0-dic" firstAttribute="centerX" secondItem="KMM-eJ-9o1" secondAttribute="centerX" id="mOS-jR-EqK"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="zZd-JU-Rjv" firstAttribute="height" secondItem="Ixl-8p-hBM" secondAttribute="height" multiplier="0.3" id="1lU-xB-KN5"/>
+                                    <constraint firstAttribute="bottom" secondItem="HxX-Ud-hhy" secondAttribute="bottom" multiplier="2.5" id="7ma-RW-XTV"/>
+                                    <constraint firstItem="HxX-Ud-hhy" firstAttribute="centerX" secondItem="Ixl-8p-hBM" secondAttribute="centerX" id="9Pt-BS-l5p"/>
+                                    <constraint firstItem="zZd-JU-Rjv" firstAttribute="centerX" secondItem="Ixl-8p-hBM" secondAttribute="centerX" id="VtI-hc-q3R"/>
+                                    <constraint firstItem="zZd-JU-Rjv" firstAttribute="width" secondItem="Ixl-8p-hBM" secondAttribute="width" multiplier="0.5" id="amQ-Wc-dZ0"/>
+                                    <constraint firstItem="zZd-JU-Rjv" firstAttribute="centerY" secondItem="Ixl-8p-hBM" secondAttribute="centerY" multiplier="1.25" id="xFN-f2-BoT"/>
+                                    <constraint firstItem="HxX-Ud-hhy" firstAttribute="width" secondItem="Ixl-8p-hBM" secondAttribute="width" multiplier="0.5" id="yeD-5L-HMa"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QVK-Fk-LKm"/>
@@ -38,10 +148,27 @@
                             <constraint firstItem="QJk-ra-C94" firstAttribute="top" secondItem="ttS-Bb-xxV" secondAttribute="top" id="xor-Qz-wYg"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="W94-Ue-j5a"/>
+                    <connections>
+                        <outlet property="appleLogin" destination="mUP-dv-33z" id="qXV-Dl-Gda"/>
+                        <outlet property="emailLogin" destination="KMM-eJ-9o1" id="QYe-GD-ItX"/>
+                        <outlet property="facebookLogin" destination="tAc-eY-J0t" id="brJ-jQ-4aY"/>
+                        <outlet property="kakaoLogin" destination="VmU-km-dAW" id="ac5-ok-MHa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kr4-7X-ZcJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GQe-7G-pBK">
+                    <connections>
+                        <action selector="tapKakao:" destination="ajU-cF-Xxb" id="87H-8d-r02"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="m3O-rL-sRr">
+                    <connections>
+                        <action selector="tapFacebookLogin:" destination="ajU-cF-Xxb" id="SjR-qT-mA1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="-635.49107142857144"/>
+            <point key="canvasLocation" x="944.92753623188412" y="-635.49107142857144"/>
         </scene>
         <!--Location View Controller-->
         <scene sceneID="dC2-6Z-VwB">
@@ -157,9 +284,9 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="-635.49107142857144"/>
+            <point key="canvasLocation" x="1839.1304347826087" y="-635.49107142857144"/>
         </scene>
-        <!--Item-->
+        <!--맛집찾기-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainViewController" customModule="MangoClone" customModuleProvider="target" sceneMemberID="viewController">
@@ -224,7 +351,7 @@
                                     <constraint firstItem="xWJ-V6-JMm" firstAttribute="centerY" secondItem="eSK-bX-ing" secondAttribute="centerY" id="kuZ-ad-246"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7iv-qo-Rzr">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7iv-qo-Rzr">
                                 <rect key="frame" x="0.0" y="107.5" width="414" height="705.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Z5l-hZ-49Y">
@@ -259,60 +386,134 @@
                             <constraint firstItem="7iv-qo-Rzr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zuj-lp-lpG"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="9NP-6O-tkP"/>
+                    <tabBarItem key="tabBarItem" title="맛집찾기" image="searchImg" selectedImage="searchImg" id="9NP-6O-tkP"/>
                     <navigationItem key="navigationItem" id="S9o-pN-bwQ"/>
                     <connections>
                         <outlet property="collectionView" destination="7iv-qo-Rzr" id="0om-Sh-o41"/>
                         <outlet property="mainView" destination="8bC-Xf-vdC" id="5gY-oj-CZp"/>
+                        <outlet property="seeLocation" destination="eol-9X-Lwz" id="Dgy-oX-WAw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855.072463768116" y="93.75"/>
+            <point key="canvasLocation" x="3675.36231884058" y="93.75"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="xLN-XG-4s4">
+        <!--망고픽-->
+        <scene sceneID="Z25-q6-FIo">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="5SJ-lQ-7dD" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JQ7-xb-lIP">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="tO3-MB-JE9" kind="relationship" relationship="rootViewController" id="5rV-bB-k5P"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Mk-cM-goN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="PickViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FiO-Wb-zhG" customClass="PickViewController" customModule="MangoClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fQp-Ai-Jam">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TTk-N9-h4n"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="망고픽" image="pickImg" id="u2n-1r-syS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VBT-Hy-EbR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+            <point key="canvasLocation" x="4426" y="94"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="gDa-SO-haN">
+        <!--소식-->
+        <scene sceneID="iu7-ab-Axb">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tO3-MB-JE9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MessageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KR2-h2-Amv" customClass="MessageViewController" customModule="MangoClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fze-RZ-2bV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="VAm-1R-HV5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="소식" image="messeageImg" id="mMd-uW-RiN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q6G-R4-Bm7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3675" y="787"/>
+        </scene>
+        <!--내정보-->
+        <scene sceneID="jbr-Ke-9Gk">
+            <objects>
+                <viewController storyboardIdentifier="InfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zfm-ek-5MN" customClass="InfoViewController" customModule="MangoClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o1C-u6-2I3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="x6M-2r-FOA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2N9-lG-GLL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x6M-2r-FOA" firstAttribute="top" secondItem="2N9-lG-GLL" secondAttribute="top" id="S3E-YZ-lYV"/>
+                            <constraint firstItem="x6M-2r-FOA" firstAttribute="leading" secondItem="2N9-lG-GLL" secondAttribute="leading" id="WJt-Uq-2km"/>
+                            <constraint firstItem="2N9-lG-GLL" firstAttribute="bottom" secondItem="x6M-2r-FOA" secondAttribute="bottom" id="pcY-m5-YGy"/>
+                            <constraint firstItem="2N9-lG-GLL" firstAttribute="trailing" secondItem="x6M-2r-FOA" secondAttribute="trailing" id="tfY-Kn-C7O"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="내정보" image="infoImg" id="izd-uY-0ag"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PFS-EP-0g5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4425" y="787"/>
+        </scene>
+        <!--Eatdeal View Controller-->
+        <scene sceneID="H9y-SV-7sy">
+            <objects>
+                <viewController storyboardIdentifier="EatdealViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vd9-ll-D9m" customClass="EatdealViewController" customModule="MangoClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ucl-mU-H7K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cqm-BB-Mhl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="plusImg" id="0M9-1W-AQa">
+                        <color key="badgeColor" red="0.92341256140000005" green="0.4772681594" blue="0.18419894580000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hk1-uO-Go3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5171" y="94"/>
+        </scene>
+        <!--Custom Tab Bar View Controller-->
+        <scene sceneID="Cil-Q7-rnQ">
+            <objects>
+                <tabBarController storyboardIdentifier="CustomTabBarViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cJp-cC-Sn4" customClass="CustomTabBarViewController" customModule="MangoClone" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="C1w-u5-2FB"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Skl-66-cy9">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="uek-Ek-xGE">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.92341256140000005" green="0.4772681594" blue="0.18419894580000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <tabBarAppearance key="standardAppearance" backgroundImageContentMode="scaleAspectFill">
+                            <color key="selectionIndicatorTintColor" red="0.92341256140000005" green="0.4772681594" blue="0.18419894580000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </tabBarAppearance>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="mOM-le-uUF"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="iaC-li-sto"/>
+                        <segue destination="FiO-Wb-zhG" kind="relationship" relationship="viewControllers" id="EaJ-y9-ep1"/>
+                        <segue destination="vd9-ll-D9m" kind="relationship" relationship="viewControllers" id="rGT-jn-kVX"/>
+                        <segue destination="KR2-h2-Amv" kind="relationship" relationship="viewControllers" id="LuL-AY-7bQ"/>
+                        <segue destination="Zfm-ek-5MN" kind="relationship" relationship="viewControllers" id="Tjy-kb-fML"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zys-tx-aUE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EtO-Bc-9cq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="944.92753623188412" y="93.75"/>
+            <point key="canvasLocation" x="2765.217391304348" y="93.75"/>
         </scene>
     </scenes>
     <resources>
         <image name="LoginBack" width="152" height="288"/>
         <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <image name="infoImg" width="32.5" height="29.5"/>
         <image name="locationImg" width="144" height="134.5"/>
+        <image name="mangoLogo" width="137" height="49.5"/>
         <image name="map" width="31.5" height="31.5"/>
+        <image name="messeageImg" width="32.5" height="28.5"/>
+        <image name="pickImg" width="26.5" height="26.5"/>
+        <image name="plusImg" width="45.5" height="41.5"/>
         <image name="search" width="31.5" height="31.5"/>
+        <image name="searchImg" width="26.5" height="25.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

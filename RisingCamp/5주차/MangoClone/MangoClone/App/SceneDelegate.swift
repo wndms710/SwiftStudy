@@ -6,6 +6,10 @@
 //
 
 import UIKit
+//import KakaoSDKCommon
+//import KakaoSDKAuth
+//import KakaoSDKUser
+import FacebookCore
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -49,7 +53,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
-
+    
+    
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+//        //MARK: - 카카오톡 로그인
+//            if let url = URLContexts.first?.url {
+//                if (AuthApi.isKakaoTalkLoginUrl(url)) {
+//                    _ = AuthController.handleOpenUrl(url: url)
+//                }
+//            }
+        //MARK: - 페이스북 로그인
+        guard let url = URLContexts.first?.url else {
+            return
+        }
+        
+            ApplicationDelegate.shared.application(
+                UIApplication.shared,
+                open: url,
+                sourceApplication: nil,
+                annotation: [UIApplication.OpenURLOptionsKey.annotation]
+            )
+        }
 
 }
 

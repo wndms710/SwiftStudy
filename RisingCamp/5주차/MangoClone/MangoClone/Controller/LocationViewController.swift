@@ -22,10 +22,13 @@ class LocationViewController: UIViewController {
     }
     
     @IBAction func tapAgreeBut(_ sender: Any) {
-        let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-        self.dismiss(animated: true)
+        let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "CustomTabBarViewController") as! CustomTabBarViewController
+        mainVC.modalPresentationStyle = .overCurrentContext
+        mainVC.modalTransitionStyle = .crossDissolve
+        self.present(mainVC, animated: true)
         requestAuthorization()
-        mainVC.currentLocation = self.currentLocation
+//        mainVC.currentLocation = self.currentLocation
+//        print(mainVC.currentLocation)
     }
     
     private func requestAuthorization() {

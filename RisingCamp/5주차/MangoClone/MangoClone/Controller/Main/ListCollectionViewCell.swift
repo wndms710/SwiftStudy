@@ -13,6 +13,8 @@ class ListCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var grade: UILabel!
     @IBOutlet weak var place: UILabel!
+    @IBOutlet weak var readCount: UILabel!
+    @IBOutlet weak var blog: UILabel!
     
     
     override func awakeFromNib() {
