@@ -43,6 +43,8 @@ class LoginViewController: UIViewController {
         }
     }
     
+
+    
     
     
     //MARK: - LifeCycle
@@ -98,6 +100,7 @@ class LoginViewController: UIViewController {
                 
                 let locationVC = self?.storyboard?.instantiateViewController(withIdentifier: "LocationViewController") as! LocationViewController
                 locationVC.modalPresentationStyle = .overCurrentContext
+            
                 self?.present(locationVC, animated: true)
                                                                                                      
             }

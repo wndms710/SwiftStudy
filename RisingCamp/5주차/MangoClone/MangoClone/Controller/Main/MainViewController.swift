@@ -41,6 +41,9 @@ class MainViewController: UIViewController {
         let listCell = UINib(nibName: "ListCollectionViewCell", bundle: nil)
         collectionView.register(listCell, forCellWithReuseIdentifier: "ListCollectionViewCell")
         
+//        let botCell = UINib(nibName: "BottomCollectionViewCell", bundle: nil)
+//        collectionView.register(botCell, forCellWithReuseIdentifier: "BottomCollectionViewCell")
+        
 //        requestAuthorization()
         
         RestRequest().getRestData(self)
@@ -129,7 +132,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
         else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ListCollectionViewCell", for: indexPath) as! ListCollectionViewCell
-            
+
             cell.name.text = "\(indexPath.item - 1). \(self.restData[indexPath.item - 2].title)"
     //            do {
     //                let data = try Data(contentsOf: URL(string: self.restData[indexPath.item].firstimage)!)
@@ -151,9 +154,13 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cell.grade.text = "\(round(Double.random(in: 3.2...4.3)*10)/10)"
             cell.blog.text = "\(Int.random(in: 5...50))"
             
-//            cell.layoutMargins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-//            let layout = UICollectionViewFlowLayout()
-//            layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+            cell.layoutMargins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+            let layout = UICollectionViewFlowLayout()
+            layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+            
+            
+//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BottomCollectionViewCell", for: indexPath) as! BottomCollectionViewCell
+//            cell.restData = self.restData
            return cell
         }
     }
@@ -177,6 +184,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         else {
 //            return CGSize(width: (width-30) / 2 , height: height * 0.34)
             return CGSize(width: width / 2 , height: height * 0.34)
+//            return CGSize(width: width, height: height)
         }
     }
     

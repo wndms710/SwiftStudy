@@ -12,6 +12,7 @@ class LocationViewController: UIViewController {
     
     var locationManager: CLLocationManager?
     var currentLocation: CLLocationCoordinate2D!
+    
 
     @IBOutlet weak var agreeView: UIView! {
         didSet {
