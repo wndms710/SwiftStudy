@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C1F2BAB845C4D9923AF0035 /* Pods_MangoClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166EB5A320A7EA84CD2C06B1 /* Pods_MangoClone.framework */; };
+		417511FB287EB39800F8A4C1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417511FA287EB39800F8A4C1 /* MapViewController.swift */; };
 		418C9733287B0EB300E5C9B1 /* AreaCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418C9732287B0EB300E5C9B1 /* AreaCode.swift */; };
 		418C9737287B15EE00E5C9B1 /* RestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418C9736287B15EE00E5C9B1 /* RestResponse.swift */; };
 		41B6E3AF28794C6900FC5A5F /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B6E3AE28794C6900FC5A5F /* LocationService.swift */; };
@@ -17,6 +18,8 @@
 		41B90910287703C90056870C /* MiddleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B9090E287703C90056870C /* MiddleCollectionViewCell.xib */; };
 		41B909132877208B0056870C /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B909112877208B0056870C /* ListCollectionViewCell.swift */; };
 		41B909142877208B0056870C /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B909122877208B0056870C /* ListCollectionViewCell.xib */; };
+		41BA2CB0287F3CFA004509A8 /* PickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA2CAE287F3CFA004509A8 /* PickTableViewCell.swift */; };
+		41BA2CB1287F3CFA004509A8 /* PickTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41BA2CAF287F3CFA004509A8 /* PickTableViewCell.xib */; };
 		41C1AE182876A2B600E5C3BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C1AE172876A2B600E5C3BC /* AppDelegate.swift */; };
 		41C1AE1A2876A2B600E5C3BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C1AE192876A2B600E5C3BC /* SceneDelegate.swift */; };
 		41C1AE1F2876A2B600E5C3BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C1AE1D2876A2B600E5C3BC /* Main.storyboard */; };
@@ -73,6 +76,7 @@
 		043B5829A9FA855E05D6A8DC /* Pods-MangoCloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoCloneTests.debug.xcconfig"; path = "Target Support Files/Pods-MangoCloneTests/Pods-MangoCloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0C6D409DA0A321C28A17D621 /* Pods-MangoClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoClone.debug.xcconfig"; path = "Target Support Files/Pods-MangoClone/Pods-MangoClone.debug.xcconfig"; sourceTree = "<group>"; };
 		166EB5A320A7EA84CD2C06B1 /* Pods_MangoClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangoClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		417511FA287EB39800F8A4C1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		418C9732287B0EB300E5C9B1 /* AreaCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaCode.swift; sourceTree = "<group>"; };
 		418C9736287B15EE00E5C9B1 /* RestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestResponse.swift; sourceTree = "<group>"; };
 		41B6E3AE28794C6900FC5A5F /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 		41B9090E287703C90056870C /* MiddleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiddleCollectionViewCell.xib; sourceTree = "<group>"; };
 		41B909112877208B0056870C /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
 		41B909122877208B0056870C /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCollectionViewCell.xib; sourceTree = "<group>"; };
+		41BA2CAE287F3CFA004509A8 /* PickTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickTableViewCell.swift; sourceTree = "<group>"; };
+		41BA2CAF287F3CFA004509A8 /* PickTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickTableViewCell.xib; sourceTree = "<group>"; };
 		41C1AE142876A2B600E5C3BC /* MangoClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangoClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C1AE172876A2B600E5C3BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41C1AE192876A2B600E5C3BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +161,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41BA2CAD287F1492004509A8 /* Pick */ = {
+			isa = PBXGroup;
+			children = (
+				41CAEA61287D615D00DC6DCA /* PickViewController.swift */,
+				41BA2CAE287F3CFA004509A8 /* PickTableViewCell.swift */,
+			);
+			path = Pick;
+			sourceTree = "<group>";
+		};
+		41BA2CB2287F3D05004509A8 /* PickView */ = {
+			isa = PBXGroup;
+			children = (
+				41BA2CAF287F3CFA004509A8 /* PickTableViewCell.xib */,
+			);
+			path = PickView;
+			sourceTree = "<group>";
+		};
 		41C1AE0B2876A2B600E5C3BC = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +270,7 @@
 		41C1AE4E2876A93700E5C3BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				41BA2CB2287F3D05004509A8 /* PickView */,
 				41C1AE5F2876D05800E5C3BC /* MainView */,
 				41C1AE252876A2BA00E5C3BC /* LaunchScreen.storyboard */,
 				41C1AE1D2876A2B600E5C3BC /* Main.storyboard */,
@@ -257,11 +281,11 @@
 		41C1AE4F2876A93B00E5C3BC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				41BA2CAD287F1492004509A8 /* Pick */,
 				41CAEA6B287D6C6600DC6DCA /* Info */,
 				41C1AE5E2876D04200E5C3BC /* Main */,
 				41C1AE512876B24000E5C3BC /* LoginViewController.swift */,
 				41C1AE532876C06300E5C3BC /* LocationViewController.swift */,
-				41CAEA61287D615D00DC6DCA /* PickViewController.swift */,
 				41CAEA63287D616F00DC6DCA /* EatdealViewController.swift */,
 				41CAEA65287D617A00DC6DCA /* MessageViewController.swift */,
 				41CAEA69287D634300DC6DCA /* CustomTabBarViewController.swift */,
@@ -287,6 +311,7 @@
 				41B9090D287703C90056870C /* MiddleCollectionViewCell.swift */,
 				41B909112877208B0056870C /* ListCollectionViewCell.swift */,
 				41CAEA70287D6DB700DC6DCA /* BottomCollectionViewCell.swift */,
+				417511FA287EB39800F8A4C1 /* MapViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -349,6 +374,7 @@
 				41C1AE112876A2B600E5C3BC /* Frameworks */,
 				41C1AE122876A2B600E5C3BC /* Resources */,
 				FB92CA35B7F07F7D2577CD6E /* [CP] Embed Pods Frameworks */,
+				AC034CFDBA10A15FA1E916F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -395,6 +421,7 @@
 				41C1AE342876A2BA00E5C3BC /* Frameworks */,
 				41C1AE352876A2BA00E5C3BC /* Resources */,
 				EFAC11FCC247ADB8661774D0 /* [CP] Embed Pods Frameworks */,
+				E9C9D26AF3518EC5122CEAC6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -466,6 +493,7 @@
 				41CAEA6F287D6C9400DC6DCA /* InfoTableViewCell.xib in Resources */,
 				41CAEA73287D6DB700DC6DCA /* BottomCollectionViewCell.xib in Resources */,
 				41C1AE1F2876A2B600E5C3BC /* Main.storyboard in Resources */,
+				41BA2CB1287F3CFA004509A8 /* PickTableViewCell.xib in Resources */,
 				41B9090C2876D28D0056870C /* BannerCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +559,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AC034CFDBA10A15FA1E916F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangoClone/Pods-MangoClone-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangoClone/Pods-MangoClone-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MangoClone/Pods-MangoClone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BC3C8EF909850898730FDD59 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -551,6 +596,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9C9D26AF3518EC5122CEAC6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangoClone-MangoCloneUITests/Pods-MangoClone-MangoCloneUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangoClone-MangoCloneUITests/Pods-MangoClone-MangoCloneUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MangoClone-MangoCloneUITests/Pods-MangoClone-MangoCloneUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EFAC11FCC247ADB8661774D0 /* [CP] Embed Pods Frameworks */ = {
@@ -597,6 +659,7 @@
 				41C1AE182876A2B600E5C3BC /* AppDelegate.swift in Sources */,
 				41CAEA6E287D6C9400DC6DCA /* InfoTableViewCell.swift in Sources */,
 				41C1AE5C2876D00000E5C3BC /* MainTopCollectionViewCell.swift in Sources */,
+				41BA2CB0287F3CFA004509A8 /* PickTableViewCell.swift in Sources */,
 				41C1AE222876A2B600E5C3BC /* MangoClone.xcdatamodeld in Sources */,
 				41CAEA62287D615D00DC6DCA /* PickViewController.swift in Sources */,
 				41CAEA68287D618500DC6DCA /* InfoViewController.swift in Sources */,
@@ -605,6 +668,7 @@
 				41CAEA6A287D634300DC6DCA /* CustomTabBarViewController.swift in Sources */,
 				41C1AE562876C87300E5C3BC /* MainViewController.swift in Sources */,
 				41C1AE522876B24000E5C3BC /* LoginViewController.swift in Sources */,
+				417511FB287EB39800F8A4C1 /* MapViewController.swift in Sources */,
 				41B6E3AF28794C6900FC5A5F /* LocationService.swift in Sources */,
 				41E84E3D287C1BA500552895 /* RestRequest.swift in Sources */,
 				41B909132877208B0056870C /* ListCollectionViewCell.swift in Sources */,

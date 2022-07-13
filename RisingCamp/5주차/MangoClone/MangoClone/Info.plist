@@ -18,6 +18,10 @@
 	<string></string>
 	<key>FacebookAppID</key>
 	<string>3022834244695061</string>
+	<key>FacebookAdvertiserIDCollectionEnabled</key>
+	<true/>
+	<key>FacebookAutoLogAppEventsEnabled</key>
+	<true/>
 	<key>FacebookClientToken</key>
 	<string>083a269110025146146675eef418e59e</string>
 	<key>FacebookDisplayName</key>

@@ -6,13 +6,15 @@
 //
 
 import UIKit
+import CoreAudio
+import CoreLocation
 
 class CustomTabBarViewController: UITabBarController {
+    
+//    var currentLocation: CLLocationCoordinate2D!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
 }

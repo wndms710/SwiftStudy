@@ -9,6 +9,8 @@ target 'MangoClone' do
 
 pod 'XLPagerTabStrip', '~> 9.0'
 pod 'Alamofire'
+pod 'GoogleMaps', '7.0.0'
+pod 'Google-Maps-iOS-Utils', '4.1.0'
 
   target 'MangoCloneTests' do
     inherit! :search_paths

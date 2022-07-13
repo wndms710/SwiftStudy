@@ -98,6 +98,8 @@ class LoginViewController: UIViewController {
                 
                 })
                 
+                Settings.shared.isAutoLogAppEventsEnabled = true
+                
                 let locationVC = self?.storyboard?.instantiateViewController(withIdentifier: "LocationViewController") as! LocationViewController
                 locationVC.modalPresentationStyle = .overCurrentContext
             

@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
     var currentLocation: CLLocationCoordinate2D!
     @IBOutlet weak var seeLocation: UILabel!
     var restRequest = RestRequest()
+    let sectionInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     
     //MARK: - LifeCycle
     override func viewDidLoad() {
@@ -45,9 +46,8 @@ class MainViewController: UIViewController {
 //        collectionView.register(botCell, forCellWithReuseIdentifier: "BottomCollectionViewCell")
         
 //        requestAuthorization()
-        
         RestRequest().getRestData(self)
-    }
+        }
     
     override func viewDidAppear(_ animated: Bool) {
 //        if locationManager == nil {
@@ -75,6 +75,14 @@ class MainViewController: UIViewController {
         DispatchQueue.main.async {
             self.collectionView.reloadData()
         }
+    }
+    
+    
+    //MARK: - go to mapview
+    @IBAction func goToMapView(_ sender: Any) {
+        let mapVC = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
+//        self.currentLocation! = mapVC.currentLocation
+        self.navigationController?.pushViewController(mapVC, animated: false)
     }
     
 }
@@ -115,25 +123,33 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return restData.count + 2
+//        return restData.count + 2
+        if section == 2 {
+            return restData.count
+        }
+        else {
+            return 1
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        if indexPath.section == 0 {
-        if indexPath.row == 0 {
+        if indexPath.section == 0 {
+//        if indexPath.row == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainTopCollectionViewCell", for: indexPath) as! MainTopCollectionViewCell
 
             return cell
         }
-//        else if indexPath.section == 1 {
-        else if indexPath.row == 1 {
+        
+        else if indexPath.section == 1 {
+//        else if indexPath.row == 1 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MiddleCollectionViewCell", for: indexPath) as! MiddleCollectionViewCell
             return cell
         }
+        
         else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ListCollectionViewCell", for: indexPath) as! ListCollectionViewCell
 
-            cell.name.text = "\(indexPath.item - 1). \(self.restData[indexPath.item - 2].title)"
+            cell.name.text = "\(indexPath.item + 1). \(self.restData[indexPath.item].title)"
     //            do {
     //                let data = try Data(contentsOf: URL(string: self.restData[indexPath.item].firstimage)!)
     //                cell.imgView.image = UIImage(data: data)
@@ -142,21 +158,21 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     //                print(error)
     //            }
            // Data는 background
-            if let data = try? Data(contentsOf: URL(string: self.restData[indexPath.item - 2].firstimage)!) {
+            if let data = try? Data(contentsOf: URL(string: self.restData[indexPath.item].firstimage)!) {
                //Main Thread
                DispatchQueue.main.async {
                    cell.imgView.image = UIImage(data: data)
                }
            }
-           cell.readCount.text = "\(self.restData[indexPath.item - 2].readcount)"
-            cell.place.text = self.restData[indexPath.item - 2].addr1
+           cell.readCount.text = "\(self.restData[indexPath.item].readcount)"
+            cell.place.text = self.restData[indexPath.item].addr1
 //           print(indexPath.item)
             cell.grade.text = "\(round(Double.random(in: 3.2...4.3)*10)/10)"
             cell.blog.text = "\(Int.random(in: 5...50))"
             
-            cell.layoutMargins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-            let layout = UICollectionViewFlowLayout()
-            layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+//            cell.layoutMargins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+//            let layout = UICollectionViewFlowLayout()
+//            layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
             
             
 //            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BottomCollectionViewCell", for: indexPath) as! BottomCollectionViewCell
@@ -168,23 +184,52 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return 3
     }
         
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.size.width
         let height = collectionView.frame.size.height
-        if indexPath.row == 0 {
+        if indexPath.section == 0 {
             return CGSize(width: width, height: (height * 0.19))
         }
-        else if indexPath.row == 1 {
+        else if indexPath.section == 1 {
             return CGSize(width: width, height: (height * 0.15))
         }
         else {
 //            return CGSize(width: (width-30) / 2 , height: height * 0.34)
-            return CGSize(width: width / 2 , height: height * 0.34)
+//            return CGSize(width: width / 2 , height: height * 0.34)
 //            return CGSize(width: width, height: height)
+            // 상하좌우 10 inset
+            
+            let itemsPerRow: CGFloat = 2
+            let widthPadding = sectionInsets.left * (itemsPerRow + 1)
+            let itemPerColumn: CGFloat = CGFloat(restData.count)
+            let heightPadding = sectionInsets.top * (itemPerColumn + 1)
+            let cellWidth = (width - widthPadding) / itemsPerRow
+//            let cellHeight = (height - heightPadding) / itemPerColumn
+            let cellHeight = (height - heightPadding) * 0.34
+            
+            return CGSize(width: cellWidth, height: cellHeight)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        if section == 2 {
+            return sectionInsets
+        }
+        else {
+            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        if section == 2 {
+            return sectionInsets.left
+        }
+        else {
+            return 0
         }
     }
     

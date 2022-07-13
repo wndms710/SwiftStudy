@@ -10,6 +10,7 @@ import CoreData
 import FacebookLogin
 import FBSDKLoginKit
 import FBSDKCoreKit
+import GoogleMaps
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     application,
                     didFinishLaunchingWithOptions: launchOptions
                 )
+        
+        GMSServices.provideAPIKey("AIzaSyBH82TliHEqP_bCbd9tp3bxXQp5yij5i04")
                 return true
     }
 
