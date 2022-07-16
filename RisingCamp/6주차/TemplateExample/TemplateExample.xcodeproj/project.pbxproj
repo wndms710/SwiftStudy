@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		319D4F9FDE32E41E5E62FBD6 /* Pods_TemplateExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570649A2D31920920879C881 /* Pods_TemplateExampleTests.framework */; };
+		4150E63128829AED008AB887 /* FriendSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150E63028829AED008AB887 /* FriendSearchViewController.swift */; };
+		4150E63328829B65008AB887 /* FriendSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4150E63228829B65008AB887 /* FriendSearchViewController.xib */; };
+		4150E63B2882ABDE008AB887 /* FriendReqInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150E63A2882ABDE008AB887 /* FriendReqInput.swift */; };
+		4150E63D2882AC61008AB887 /* FriendReqResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150E63C2882AC61008AB887 /* FriendReqResponse.swift */; };
+		4150E63F2882ACC5008AB887 /* FriendReqDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4150E63E2882ACC5008AB887 /* FriendReqDataManager.swift */; };
 		417B234628812A6500979C5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417B234528812A6500979C5A /* AppDelegate.swift */; };
 		417B234828812A6500979C5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417B234728812A6500979C5A /* SceneDelegate.swift */; };
 		417B234D28812A6500979C5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417B234B28812A6500979C5A /* Main.storyboard */; };
@@ -47,6 +52,11 @@
 /* Begin PBXFileReference section */
 		23A98E79EE03E22AF096F6EF /* Pods-TemplateExample-TemplateExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateExample-TemplateExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-TemplateExample-TemplateExampleUITests/Pods-TemplateExample-TemplateExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		29FA9E1223C43C8D0068BD68 /* Pods-TemplateExample-TemplateExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateExample-TemplateExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-TemplateExample-TemplateExampleUITests/Pods-TemplateExample-TemplateExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4150E63028829AED008AB887 /* FriendSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendSearchViewController.swift; sourceTree = "<group>"; };
+		4150E63228829B65008AB887 /* FriendSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendSearchViewController.xib; sourceTree = "<group>"; };
+		4150E63A2882ABDE008AB887 /* FriendReqInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendReqInput.swift; sourceTree = "<group>"; };
+		4150E63C2882AC61008AB887 /* FriendReqResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendReqResponse.swift; sourceTree = "<group>"; };
+		4150E63E2882ACC5008AB887 /* FriendReqDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendReqDataManager.swift; sourceTree = "<group>"; };
 		417B234228812A6500979C5A /* TemplateExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		417B234528812A6500979C5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		417B234728812A6500979C5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +136,75 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4150E62C288297AB008AB887 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				417B237A28812DC100979C5A /* Action */,
+				417B237B28812DC600979C5A /* Network */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4150E62D28829975008AB887 /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				4150E62E2882997B008AB887 /* Search */,
+				4150E62F28829981008AB887 /* Req */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		4150E62E2882997B008AB887 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4150E63528829EEB008AB887 /* DataManager */,
+				4150E63428829EE4008AB887 /* Entity */,
+				4150E63028829AED008AB887 /* FriendSearchViewController.swift */,
+				4150E63228829B65008AB887 /* FriendSearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		4150E62F28829981008AB887 /* Req */ = {
+			isa = PBXGroup;
+			children = (
+				4150E6382882ABB4008AB887 /* Entity */,
+				4150E6392882ABC5008AB887 /* DataManager */,
+			);
+			path = Req;
+			sourceTree = "<group>";
+		};
+		4150E63428829EE4008AB887 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4150E63528829EEB008AB887 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		4150E6382882ABB4008AB887 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4150E63A2882ABDE008AB887 /* FriendReqInput.swift */,
+				4150E63C2882AC61008AB887 /* FriendReqResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4150E6392882ABC5008AB887 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				4150E63E2882ACC5008AB887 /* FriendReqDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 		417B233928812A6500979C5A = {
 			isa = PBXGroup;
 			children = (
@@ -153,8 +232,7 @@
 			children = (
 				417B237828812DA900979C5A /* Configuration */,
 				417B237928812DB100979C5A /* Splash */,
-				417B237A28812DC100979C5A /* Action */,
-				417B237B28812DC600979C5A /* Network */,
+				4150E62C288297AB008AB887 /* Main */,
 				417B234528812A6500979C5A /* AppDelegate.swift */,
 				417B234728812A6500979C5A /* SceneDelegate.swift */,
 				417B234B28812A6500979C5A /* Main.storyboard */,
@@ -213,6 +291,7 @@
 		417B237B28812DC600979C5A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				4150E62D28829975008AB887 /* Friend */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -366,6 +445,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4150E63328829B65008AB887 /* FriendSearchViewController.xib in Resources */,
 				417B235528812A6600979C5A /* LaunchScreen.storyboard in Resources */,
 				417B235228812A6600979C5A /* Assets.xcassets in Resources */,
 				417B234D28812A6500979C5A /* Main.storyboard in Resources */,
@@ -497,11 +577,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				41874FEE2881B59300671580 /* BaseTabBarController.swift in Sources */,
+				4150E63B2882ABDE008AB887 /* FriendReqInput.swift in Sources */,
 				417B235028812A6500979C5A /* TemplateExample.xcdatamodeld in Sources */,
 				41874FE92881B18000671580 /* Color.swift in Sources */,
 				417B237D28812E3E00979C5A /* Constant.swift in Sources */,
+				4150E63D2882AC61008AB887 /* FriendReqResponse.swift in Sources */,
 				41874FEC2881B2D700671580 /* UIFont.swift in Sources */,
 				41874FF02881B5AE00671580 /* BaseViewController.swift in Sources */,
+				4150E63F2882ACC5008AB887 /* FriendReqDataManager.swift in Sources */,
+				4150E63128829AED008AB887 /* FriendSearchViewController.swift in Sources */,
 				417B234628812A6500979C5A /* AppDelegate.swift in Sources */,
 				417B234828812A6500979C5A /* SceneDelegate.swift in Sources */,
 				41874FE72881B0B800671580 /* JwtToken.swift in Sources */,
