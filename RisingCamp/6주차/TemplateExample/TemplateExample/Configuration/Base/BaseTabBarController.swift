@@ -1,13 +1,13 @@
 //
-//  MessageViewController.swift
-//  MangoClone
+//  BaseTabBarController.swift
+//  TemplateExample
 //
-//  Created by 조주은 on 2022/07/12.
+//  Created by 조주은 on 2022/07/15.
 //
 
 import UIKit
 
-class MessageViewController: UIViewController {
+class BaseTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

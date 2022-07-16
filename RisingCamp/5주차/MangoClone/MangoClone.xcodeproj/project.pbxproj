@@ -51,6 +51,12 @@
 		41CAEA72287D6DB700DC6DCA /* BottomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CAEA70287D6DB700DC6DCA /* BottomCollectionViewCell.swift */; };
 		41CAEA73287D6DB700DC6DCA /* BottomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CAEA71287D6DB700DC6DCA /* BottomCollectionViewCell.xib */; };
 		41E84E3D287C1BA500552895 /* RestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E84E3C287C1BA500552895 /* RestRequest.swift */; };
+		41EAB378287FDE0A00BD5ED7 /* BusanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAB377287FDE0A00BD5ED7 /* BusanResponse.swift */; };
+		41EAB37A287FDF5200BD5ED7 /* BusanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAB379287FDF5200BD5ED7 /* BusanRequest.swift */; };
+		41EAB37D287FF33E00BD5ED7 /* MessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAB37C287FF33E00BD5ED7 /* MessageResponse.swift */; };
+		41EAB381287FF3D600BD5ED7 /* MessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAB380287FF3D600BD5ED7 /* MessageRequest.swift */; };
+		41EAB3842880007700BD5ED7 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAB3822880007700BD5ED7 /* MessageTableViewCell.swift */; };
+		41EAB3852880007700BD5ED7 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41EAB3832880007700BD5ED7 /* MessageTableViewCell.xib */; };
 		503EFCE1B34AAE8117846978 /* Pods_MangoClone_MangoCloneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB31BD8592610D6D74E183 /* Pods_MangoClone_MangoCloneUITests.framework */; };
 		CCF8774520C1DBE76B6B958E /* Pods_MangoCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7765496176DB6046F3FEB349 /* Pods_MangoCloneTests.framework */; };
 /* End PBXBuildFile section */
@@ -118,6 +124,12 @@
 		41CAEA70287D6DB700DC6DCA /* BottomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCollectionViewCell.swift; sourceTree = "<group>"; };
 		41CAEA71287D6DB700DC6DCA /* BottomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomCollectionViewCell.xib; sourceTree = "<group>"; };
 		41E84E3C287C1BA500552895 /* RestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestRequest.swift; sourceTree = "<group>"; };
+		41EAB377287FDE0A00BD5ED7 /* BusanResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusanResponse.swift; sourceTree = "<group>"; };
+		41EAB379287FDF5200BD5ED7 /* BusanRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusanRequest.swift; sourceTree = "<group>"; };
+		41EAB37C287FF33E00BD5ED7 /* MessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageResponse.swift; sourceTree = "<group>"; };
+		41EAB380287FF3D600BD5ED7 /* MessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRequest.swift; sourceTree = "<group>"; };
+		41EAB3822880007700BD5ED7 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		41EAB3832880007700BD5ED7 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
 		44CB31BD8592610D6D74E183 /* Pods_MangoClone_MangoCloneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangoClone_MangoCloneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7765496176DB6046F3FEB349 /* Pods_MangoCloneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangoCloneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8453F7A9FF058F03C8C2103A /* Pods-MangoClone-MangoCloneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoClone-MangoCloneUITests.debug.xcconfig"; path = "Target Support Files/Pods-MangoClone-MangoCloneUITests/Pods-MangoClone-MangoCloneUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -247,6 +259,8 @@
 			children = (
 				418C9732287B0EB300E5C9B1 /* AreaCode.swift */,
 				418C9736287B15EE00E5C9B1 /* RestResponse.swift */,
+				41EAB377287FDE0A00BD5ED7 /* BusanResponse.swift */,
+				41EAB37C287FF33E00BD5ED7 /* MessageResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -255,6 +269,8 @@
 			isa = PBXGroup;
 			children = (
 				41E84E3C287C1BA500552895 /* RestRequest.swift */,
+				41EAB379287FDF5200BD5ED7 /* BusanRequest.swift */,
+				41EAB380287FF3D600BD5ED7 /* MessageRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -270,6 +286,7 @@
 		41C1AE4E2876A93700E5C3BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				41EAB3862880008000BD5ED7 /* Message */,
 				41BA2CB2287F3D05004509A8 /* PickView */,
 				41C1AE5F2876D05800E5C3BC /* MainView */,
 				41C1AE252876A2BA00E5C3BC /* LaunchScreen.storyboard */,
@@ -281,13 +298,13 @@
 		41C1AE4F2876A93B00E5C3BC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				41EAB37B287FF01E00BD5ED7 /* Message */,
 				41BA2CAD287F1492004509A8 /* Pick */,
 				41CAEA6B287D6C6600DC6DCA /* Info */,
 				41C1AE5E2876D04200E5C3BC /* Main */,
 				41C1AE512876B24000E5C3BC /* LoginViewController.swift */,
 				41C1AE532876C06300E5C3BC /* LocationViewController.swift */,
 				41CAEA63287D616F00DC6DCA /* EatdealViewController.swift */,
-				41CAEA65287D617A00DC6DCA /* MessageViewController.swift */,
 				41CAEA69287D634300DC6DCA /* CustomTabBarViewController.swift */,
 			);
 			path = Controller;
@@ -336,6 +353,23 @@
 				41CAEA6D287D6C9400DC6DCA /* InfoTableViewCell.xib */,
 			);
 			path = Info;
+			sourceTree = "<group>";
+		};
+		41EAB37B287FF01E00BD5ED7 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				41CAEA65287D617A00DC6DCA /* MessageViewController.swift */,
+				41EAB3822880007700BD5ED7 /* MessageTableViewCell.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		41EAB3862880008000BD5ED7 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				41EAB3832880007700BD5ED7 /* MessageTableViewCell.xib */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 		5BD3C6B6681BC9C7F6852EEE /* Frameworks */ = {
@@ -486,6 +520,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41C1AE272876A2BA00E5C3BC /* LaunchScreen.storyboard in Resources */,
+				41EAB3852880007700BD5ED7 /* MessageTableViewCell.xib in Resources */,
 				41B909142877208B0056870C /* ListCollectionViewCell.xib in Resources */,
 				41B90910287703C90056870C /* MiddleCollectionViewCell.xib in Resources */,
 				41C1AE5D2876D00000E5C3BC /* MainTopCollectionViewCell.xib in Resources */,
@@ -656,6 +691,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41EAB381287FF3D600BD5ED7 /* MessageRequest.swift in Sources */,
 				41C1AE182876A2B600E5C3BC /* AppDelegate.swift in Sources */,
 				41CAEA6E287D6C9400DC6DCA /* InfoTableViewCell.swift in Sources */,
 				41C1AE5C2876D00000E5C3BC /* MainTopCollectionViewCell.swift in Sources */,
@@ -670,12 +706,16 @@
 				41C1AE522876B24000E5C3BC /* LoginViewController.swift in Sources */,
 				417511FB287EB39800F8A4C1 /* MapViewController.swift in Sources */,
 				41B6E3AF28794C6900FC5A5F /* LocationService.swift in Sources */,
+				41EAB37A287FDF5200BD5ED7 /* BusanRequest.swift in Sources */,
+				41EAB378287FDE0A00BD5ED7 /* BusanResponse.swift in Sources */,
 				41E84E3D287C1BA500552895 /* RestRequest.swift in Sources */,
 				41B909132877208B0056870C /* ListCollectionViewCell.swift in Sources */,
 				41B9090B2876D28D0056870C /* BannerCollectionViewCell.swift in Sources */,
 				41CAEA72287D6DB700DC6DCA /* BottomCollectionViewCell.swift in Sources */,
+				41EAB3842880007700BD5ED7 /* MessageTableViewCell.swift in Sources */,
 				418C9733287B0EB300E5C9B1 /* AreaCode.swift in Sources */,
 				41CAEA66287D617A00DC6DCA /* MessageViewController.swift in Sources */,
+				41EAB37D287FF33E00BD5ED7 /* MessageResponse.swift in Sources */,
 				41C1AE1A2876A2B600E5C3BC /* SceneDelegate.swift in Sources */,
 				41B9090F287703C90056870C /* MiddleCollectionViewCell.swift in Sources */,
 				418C9737287B15EE00E5C9B1 /* RestResponse.swift in Sources */,
