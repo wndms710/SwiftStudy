@@ -1,0 +1,102 @@
+PODS:
+  - Alamofire (5.6.2)
+  - AlamofireImage (4.2.0):
+    - Alamofire (~> 5.4)
+  - BSImagePicker (3.3.1)
+  - DropDown (2.3.13)
+  - ImageSlideshow (1.9.2):
+    - ImageSlideshow/Core (= 1.9.2)
+  - ImageSlideshow/Alamofire (1.9.2):
+    - AlamofireImage (~> 4.0)
+    - ImageSlideshow/Core
+  - ImageSlideshow/Core (1.9.2)
+  - MaterialComponents/Availability (124.2.0)
+  - MaterialComponents/BottomSheet (124.2.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+  - MaterialComponents/Elevation (124.2.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/private/Application (124.2.0)
+  - MaterialComponents/private/Color (124.2.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/KeyboardWatcher (124.2.0):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Math (124.2.0)
+  - MaterialComponents/ShadowElevations (124.2.0)
+  - MaterialComponents/ShadowLayer (124.2.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShapeLibrary (124.2.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (124.2.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - Pageboy (3.6.2)
+  - PanModal (1.2.7)
+  - SnapKit (5.6.0)
+  - Tabman (2.12.0):
+    - Pageboy (~> 3.6.0)
+  - TagListView (1.4.1)
+  - Then (3.0.0)
+  - TweeTextField (1.6.4)
+  - XLPagerTabStrip (9.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - BSImagePicker (~> 3.1)
+  - DropDown
+  - ImageSlideshow (~> 1.9.0)
+  - ImageSlideshow/Alamofire
+  - MaterialComponents/BottomSheet
+  - PanModal
+  - SnapKit (~> 5.6.0)
+  - Tabman (~> 2.12)
+  - TagListView (~> 1.0)
+  - Then
+  - TweeTextField
+  - XLPagerTabStrip (~> 9.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - BSImagePicker
+    - DropDown
+    - ImageSlideshow
+    - MaterialComponents
+    - Pageboy
+    - PanModal
+    - SnapKit
+    - Tabman
+    - TagListView
+    - Then
+    - TweeTextField
+    - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
+  BSImagePicker: 0fe04b574d4d6b81093785d2af6c26227efc8428
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
+  MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
+  Pageboy: cf121b9dd48c63f3f281b2a9ec93d02e0f23879b
+  PanModal: 3e16ead1a907fb06f4df3f13492fd00149fa4974
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Tabman: 447a50447ed2869c39ab3b1a779327e43e067c4e
+  TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
+  TweeTextField: 726de695eead9784f7ed02e22f6944bfcfcca07a
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
+
+PODFILE CHECKSUM: 1a3f46f267be4c3d89580616a27c27b9ae08df20
+
+COCOAPODS: 1.11.3

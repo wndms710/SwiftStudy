@@ -1,0 +1,33 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'bunjang_Clone' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for bunjang_Clone
+
+pod 'Alamofire'
+pod 'Tabman', '~> 2.12'
+pod 'ImageSlideshow', '~> 1.9.0'
+pod 'XLPagerTabStrip', '~> 9.0'
+pod "ImageSlideshow/Alamofire"
+pod 'MaterialComponents/BottomSheet'
+pod 'TweeTextField'
+pod 'Then'
+pod 'SnapKit', '~> 5.6.0'
+pod 'DropDown'
+pod 'PanModal'
+pod 'TagListView', '~> 1.0'
+pod "BSImagePicker", "~> 3.1"
+
+  target 'bunjang_CloneTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'bunjang_CloneUITests' do
+    # Pods for testing
+  end
+
+end
