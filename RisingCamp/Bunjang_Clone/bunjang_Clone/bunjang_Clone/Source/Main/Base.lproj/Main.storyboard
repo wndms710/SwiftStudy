@@ -9535,10 +9535,10 @@ NDS/Will</string>
         <image name="상점" width="82" height="82"/>
         <image name="상품금액" width="55.5" height="55.5"/>
         <image name="설정" width="25" height="25"/>
-        <image name="스니커즈" width="34" height="34"/>
+        <image name="스니커즈" width="36.5" height="33.5"/>
         <image name="스타굿즈" width="34" height="34"/>
         <image name="시계" width="34" height="34"/>
-        <image name="여성가방" width="36.5" height="33.5"/>
+        <image name="여성가방" width="34" height="34"/>
         <image name="오늘의혜택" width="414" height="106.5"/>
         <image name="원룸" width="35.5" height="35.5"/>
         <image name="인기검색어" width="30" height="30"/>
