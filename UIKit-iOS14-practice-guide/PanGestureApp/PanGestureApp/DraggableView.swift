@@ -21,13 +21,9 @@ class DraggableView: UIView {
     
     // 인터페이스 빌더에서(xib) 만들어 질 때 이 코드가 실행됨
     required init?(coder: NSCoder) {
-//        super.init(coder: coder)
-//
-//        let pan = UIPanGestureRecognizer(target: self, action: #selector(dragging))
-//        self.addGestureRecognizer(pan)
-        
         fatalError("init(coder:) has not been implemented")
     }
+    
     
     @objc func dragging(pan: UIPanGestureRecognizer) {
         switch pan.state {
