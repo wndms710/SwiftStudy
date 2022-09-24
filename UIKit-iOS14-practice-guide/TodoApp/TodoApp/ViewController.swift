@@ -8,6 +8,26 @@
 import UIKit
 import CoreData
 
+enum PrioirityLevel: Int64 {
+    case level1
+    case level2
+    case level3
+}
+
+extension PrioirityLevel {
+    var color: UIColor {
+        switch self {
+        case .level1:
+            return .green
+        case .level2:
+            return .orange
+        case .level3:
+            return .red
+        }
+    }
+}
+
+
 class ViewController: UIViewController {
     
     // AppDelegate에 접근
@@ -52,7 +72,9 @@ class ViewController: UIViewController {
     }
     
     @objc func addNewTodo() {
-        
+        let detailVC = TodoDetailViewController(nibName: "TodoDetailViewController", bundle: nil)
+        detailVC.delegate = self
+        self.present(detailVC, animated: true)
     }
 
 }
@@ -76,9 +98,30 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         } else {
             cell.dateLabel.text = ""
         }
-
+        
+        let priority = todoList[indexPath.row].prioirtyLevel
+        let priorityColor = PrioirityLevel(rawValue: priority)?.color
+        
+        cell.prioirtyView.backgroundColor = priorityColor
+        cell.prioirtyView.layer.cornerRadius = cell.prioirtyView.bounds.height / 2
+        
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let detailVC = TodoDetailViewController(nibName: "TodoDetailViewController", bundle: nil)
+        detailVC.delegate = self
+        detailVC.selectedTodoList = todoList[indexPath.row]
+        self.present(detailVC, animated: true)
+    }
+}
+
+
+extension ViewController: TodoDetailViewControllerDelegate {
+    func didFinishSaveDate() {
+        self.fetchData()
+        self.todoTableView.reloadData()
+    }
 }
