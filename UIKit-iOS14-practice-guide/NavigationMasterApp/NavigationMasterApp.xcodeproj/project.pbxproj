@@ -20,6 +20,7 @@
 		412B0C7228E189A800FFF129 /* logoSample.png in Resources */ = {isa = PBXBuildFile; fileRef = 412B0C7128E189A800FFF129 /* logoSample.png */; };
 		412B0C7428E1F81400FFF129 /* backButtonImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 412B0C7328E1F81400FFF129 /* backButtonImg.png */; };
 		412B0C7828E1F8ED00FFF129 /* newBackButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 412B0C7728E1F8ED00FFF129 /* newBackButton@3x.png */; };
+		415822B428E2DB7A00B09D60 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415822B328E2DB7A00B09D60 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		412B0C7128E189A800FFF129 /* logoSample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoSample.png; sourceTree = "<group>"; };
 		412B0C7328E1F81400FFF129 /* backButtonImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButtonImg.png; sourceTree = "<group>"; };
 		412B0C7728E1F8ED00FFF129 /* newBackButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newBackButton@3x.png"; sourceTree = "<group>"; };
+		415822B328E2DB7A00B09D60 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				412B0C3E28E1880700FFF129 /* AppDelegate.swift */,
 				412B0C4028E1880700FFF129 /* SceneDelegate.swift */,
 				412B0C4228E1880700FFF129 /* ViewController.swift */,
+				415822B328E2DB7A00B09D60 /* DetailViewController.swift */,
 				412B0C4428E1880700FFF129 /* Main.storyboard */,
 				412B0C4A28E1880900FFF129 /* Assets.xcassets */,
 				412B0C7128E189A800FFF129 /* logoSample.png */,
@@ -275,6 +278,7 @@
 			files = (
 				412B0C4328E1880700FFF129 /* ViewController.swift in Sources */,
 				412B0C3F28E1880700FFF129 /* AppDelegate.swift in Sources */,
+				415822B428E2DB7A00B09D60 /* DetailViewController.swift in Sources */,
 				412B0C4928E1880700FFF129 /* NavigationMasterApp.xcdatamodeld in Sources */,
 				412B0C4128E1880700FFF129 /* SceneDelegate.swift in Sources */,
 			);

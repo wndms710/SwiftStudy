@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="1066.1538461538462" y="3.5545023696682461"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="SML-CF-ewh">
             <objects>
-                <viewController id="Nv9-5o-3zR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nv9-5o-3zR" customClass="DetailViewController" customModule="NavigationMasterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bXi-iE-WCC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

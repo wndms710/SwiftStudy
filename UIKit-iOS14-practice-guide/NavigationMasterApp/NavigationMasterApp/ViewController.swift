@@ -15,6 +15,74 @@ class ViewController: UIViewController {
         setNaviTitleImage()
         
         makeBackButton()
+        
+        makeRightAlarmButton()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        naviBackgroundDesign()
+    }
+    
+    
+    func makeRightAlarmButton() {
+//        let image = UIImage(systemName: "alarm.fill")?.withRenderingMode(.alwaysOriginal)
+//        let rightItem = UIBarButtonItem(image: image, style: .done, target: self, action: #selector(rightItemClick))
+//
+//        let image2 = UIImage(systemName: "alarm")?.withRenderingMode(.alwaysOriginal)
+//        let rightItem2 = UIBarButtonItem(image: image2, style: .done, target: self, action: #selector(rightItemClick2))
+//        rightItem2.imageInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: -20)
+//
+//        self.navigationItem.rightBarButtonItems = [rightItem, rightItem2]
+
+        
+        let config = UIImage.SymbolConfiguration(pointSize: 40)
+        
+        let btn1 = UIButton()
+        btn1.setImage(UIImage(systemName: "alarm.fill", withConfiguration: config)?.withRenderingMode(.alwaysOriginal), for: .normal)
+        btn1.addTarget(self, action: #selector(rightItemClick), for: .touchUpInside)
+        
+        let btn2 = UIButton()
+        btn2.setImage(UIImage(systemName: "alarm", withConfiguration: config)?.withRenderingMode(.alwaysOriginal), for: .normal)
+        btn2.addTarget(self, action: #selector(rightItemClick2), for: .touchUpInside)
+        
+        let stackView = UIStackView(arrangedSubviews: [btn1, btn2])
+        stackView.axis = .horizontal
+        stackView.spacing = 10
+        stackView.distribution = .equalSpacing
+        
+        let customItem = UIBarButtonItem(customView: stackView)
+        
+        self.navigationItem.rightBarButtonItem = customItem
+        
+    }
+    
+    @objc func rightItemClick() {
+        print("right item click")
+    }
+    
+    @objc func rightItemClick2() {
+        print("right item click2")
+    }
+    
+    func naviBackgroundDesign() {
+        self.navigationController?.navigationBar.backgroundColor = .red
+        self.statusBar?.backgroundColor = .red
+        
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        
+//        // status bar design
+//        let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
+//        sceneDelegate?.statusBarView.backgroundColor = .red
+//        
+//        let window = UIApplication.shared.windows.filter { $0.isKeyWindow }.first
+//        
+//        if let hasStatusBar = sceneDelegate?.statusBarView {
+//            // 이렇게 하면 현재 뷰에서만 있음
+////            self.view.addSubview(hasStatusBar)
+//            
+//            window?.addSubview(hasStatusBar)
+//        }
     }
     
     func makeBackButton() {
