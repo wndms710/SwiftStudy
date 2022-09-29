@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_DailyChallenge_20220822_DailyChallenge_20220822UITests : NSObject
+@end
+@implementation PodsDummy_Pods_DailyChallenge_20220822_DailyChallenge_20220822UITests
+@end

@@ -1,0 +1,6 @@
+framework module Pods_DailyChallenge_20220822 {
+  umbrella header "Pods-DailyChallenge_20220822-umbrella.h"
+
+  export *
+  module * { export * }
+}
