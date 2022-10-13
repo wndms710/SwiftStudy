@@ -19,10 +19,30 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDe-El-ygV" userLabel="yellow">
                                 <rect key="frame" x="50" y="98" width="100" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ6-Ap-9QB">
+                                        <rect key="frame" x="29" y="95" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alj-9B-WL5" userLabel="subview">
+                                        <rect key="frame" x="35" y="22" width="30" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="Odd-9d-id9"/>
+                                            <constraint firstAttribute="height" constant="30" id="vmG-T3-Cvv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="4DI-2g-bOM"/>
-                                    <constraint firstAttribute="width" constant="100" id="rOl-11-cs5"/>
+                                    <constraint firstItem="bQ6-Ap-9QB" firstAttribute="centerX" secondItem="alj-9B-WL5" secondAttribute="centerX" id="9mu-IV-Hty"/>
+                                    <constraint firstItem="alj-9B-WL5" firstAttribute="top" secondItem="vDe-El-ygV" secondAttribute="top" constant="22" id="KDg-tL-WQ8"/>
+                                    <constraint firstAttribute="bottom" secondItem="bQ6-Ap-9QB" secondAttribute="bottom" constant="34" id="Obi-vQ-8T2"/>
+                                    <constraint firstItem="alj-9B-WL5" firstAttribute="centerX" secondItem="vDe-El-ygV" secondAttribute="centerX" id="Opd-lW-LIe"/>
+                                    <constraint firstItem="bQ6-Ap-9QB" firstAttribute="top" secondItem="alj-9B-WL5" secondAttribute="bottom" constant="43" id="a5h-yf-Kvc"/>
+                                    <constraint firstItem="bQ6-Ap-9QB" firstAttribute="leading" secondItem="vDe-El-ygV" secondAttribute="leading" constant="29" id="rZG-cH-zyt"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -36,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="4"/>
+            <point key="canvasLocation" x="102.89855072463769" y="3.3482142857142856"/>
         </scene>
     </scenes>
     <resources>
