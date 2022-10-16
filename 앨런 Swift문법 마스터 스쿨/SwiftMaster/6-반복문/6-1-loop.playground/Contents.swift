@@ -95,6 +95,7 @@ let list = ["Swift", "Programming", "Language"]
 
 
 for str in list {
+    // let str = "Programming"
     print(str)
 }
 
@@ -112,6 +113,7 @@ for str in list {
 // 문자열에서 각 문자를 차례 차례 한개씩 뽑아서 중괄호 안에서 사용
 
 for chr in "Hello" {
+    // let chr = "e"
     print(chr)
     //print(chr, terminator: " ")     //다음줄로 넘어가지 말고, 한칸을 띄워라
 }
@@ -126,7 +128,7 @@ for chr in "Hello" {
  */
 // 역순으로 바꾸기
 
-for number in (1...5).reversed() {
+for number in (1...5).reversed() {  // 5, 4, 3, 2, 1
     print(number)
 }
 
