@@ -18,17 +18,32 @@ class ViewController: UIViewController {
         let yelloView = UIView()
         yelloView.backgroundColor = .yellow
         
-        yelloView.translatesAutoresizingMaskIntoConstraints = false     // 코드로 오토레이아웃을 구성하기 위한 설정
+//        yelloView.translatesAutoresizingMaskIntoConstraints = false     // 코드로 오토레이아웃을 구성하기 위한 설정
         
-        // 크기
-        yelloView.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        yelloView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        self.view.addSubview(yelloView)
         
-        // 위치
+        yelloView.snp.makeConstraints { (make) -> Void in
+            make.size.equalTo(200)
+            make.centerX.equalToSuperview()
+            make.top.equalToSuperview().offset(100)
+        }
+        
+//        NSLayoutConstraint.activate([
+//            yelloView.widthAnchor.constraint(equalToConstant: 200),
+//            yelloView.heightAnchor.constraint(equalToConstant: 200),
+//            yelloView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+//            yelloView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 100)
+//        ])
+//
+//        // 크기
+//        yelloView.widthAnchor.constraint(equalToConstant: 100).isActive = true
+//        yelloView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+//
+//        // 위치
 //        yelloView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
 //        yelloView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 100).isActive = true
         
-        self.view.addSubview(yelloView)
+        
     }
 
 
