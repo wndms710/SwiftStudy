@@ -26,7 +26,7 @@ var threeValues = ("홍길동", 20,  "서울")      // 멤버(데이터의 종�
 //type(of: threeValues)
 
 
-
+// threeValues = ("임꺽정", "부산")  // 불가
 
 /*:
 ---
@@ -70,10 +70,10 @@ iOS.version
 // 튜플의 데이터 묶음을 각 한개씩 분해해 상수나 변수에 저장 가능
 
 
-let (first, second, third) = threeNumbers
-first
-second
-third
+let (first, second, third) = threeNumbers   // (1, 2, 5)
+first   // 1
+second  // 2
+third   // 5
 
 
 
